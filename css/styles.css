@@ -1,0 +1,196 @@
+/* ================ navbar ========================*/
+.logo-nav {
+  height: 50px;   /* Ajusta según tu gusto */
+  width: auto;
+  object-fit: contain;
+}
+
+
+
+
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #6284FF 0%, #FF70B8 100%);
+  padding-top: 120px; /* para separarlo del navbar fijo */
+}
+
+/* Cards */
+.service-card {
+  border-radius: 18px;
+}
+
+.service-card img {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+/* ========Hover en imagenes de las CARDS =============*/
+/* Efecto hover suave solo en imágenes */
+.service-card img {
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+.service-card:hover img {
+  transform: scale(1.08);
+  filter: brightness(1.08) saturate(1.1);
+}
+
+/* Evitar que el zoom corte la imagen: */
+.service-card { 
+    border-radius: 18px;
+    overflow: hidden;;
+}
+
+
+/* =================== Sección Fisioterapeuta ===================== /*
+
+/* Tono suave del título */
+.text-purple {
+  color: #8a3ffc;
+}
+
+/* Foto estilo */
+.therapist-photo {
+  max-height: 480px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Iconos con gradiente */
+.icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6284FF, #FF70B8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Tarjetas suaves */
+.therapist-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.therapist-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+/* =================== Contacto y Ubicacion ======================= */
+
+/* Dark section background like your mockup */
+.contact-section {
+  background-color: #0e1630;
+  color: #eaeaea;
+}
+
+/* Section titles */
+.footer-title {
+  color: #9aa4ff;
+  font-weight: 600;
+}
+
+/* Inputs estilo dark premium */
+.form-control-dark {
+  background-color: #1a233d;
+  border: 1px solid #2a3555;
+  color: white;
+}
+.form-control-dark:focus {
+  background-color: #1a233d;
+  border-color: #7b61ff;
+  box-shadow: 0 0 0 0.2rem rgba(123, 97, 255, 0.3);
+  color: #fff;
+}
+
+/* Botón WhatsApp gradiente */
+.whatsapp-btn {
+  background: linear-gradient(90deg, #6284FF, #FF70B8);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 8px;
+}
+.whatsapp-btn:hover {
+  opacity: 0.9;
+}
+
+/* Redes */
+.social-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(120deg,#6284FF,#FF70B8);
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: transform .25s;
+  margin-bottom: 10px ;
+}
+.social-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+  background-color: #0b1124;
+  color: white;
+}
+
+.icon-svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* ============= Redes sociales para desktop y mobile ================= */
+/* MOBILE */
+@media (max-width: 767px) {
+  .social-title {
+    text-align: center;
+  }
+  .social-container {
+    justify-content: center !important;
+    gap: 12px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .social-container {
+    justify-content: start;
+  }
+}
+
+
+/**************** FOOTER ***********************/
+
+
+/* Footer base */
+.site-footer {
+  background-color: #0b1124; /* Azul oscuro profundo */
+  color: #101b59; /* Gris claro azulado */
+  
+}
+
+/* Marca del footer */
+.text-footer-brand {
+  color: #ff9aa4; /* Azul suave */
+  letter-spacing: .5px;
+}
+
+/* Copyright */
+.text-footer-copy {
+  color: rgba(255,255,255,0.65);
+}
