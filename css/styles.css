@@ -1,196 +1,105 @@
-/* ================ navbar ========================*/
-.logo-nav {
-  height: 50px;   /* Ajusta según tu gusto */
-  width: auto;
-  object-fit: contain;
+/* ======== Base ======== */
+:root{
+  --zarvela-pink: #d79ca7;
+  --zarvela-gold: #e8c89d;
+  --footer-deep: #0b1124;
+  --contact-dark: #0e1630;
 }
+html { scroll-behavior: smooth; }
+body { background-color: #ffffff; }
 
+/* Navbar */
+.logo-nav{ height:48px; width:auto; object-fit:contain; }
+@media (max-width: 768px){ .logo-nav{ height:40px; } }
 
-
-
-
-.hero {
+/* ======== Hero ======== */
+.hero{
   min-height: 100vh;
   background: linear-gradient(90deg, #6284FF 0%, #FF70B8 100%);
-  padding-top: 120px; /* para separarlo del navbar fijo */
+  padding-top: 120px; /* separa del navbar fijo */
 }
+.service-card{ border-radius: 18px; overflow: hidden; transition: transform .35s ease, box-shadow .3s ease; }
+.service-card:hover{ transform: translateY(-8px); box-shadow: 0 12px 28px rgba(0,0,0,.18); }
+.service-card img{ height: 180px; object-fit: cover; transition: transform .45s ease, filter .3s ease; }
+.service-card:hover img{ transform: translateY(-6px) scale(1.08); filter: brightness(1.1) saturate(1.08); }
+.service-card .card-body{ transition: transform .35s ease; }
+.service-card:hover .card-body{ transform: translateY(-4px); }
 
-/* Cards */
-.service-card {
-  border-radius: 18px;
-}
+/* Reveal on scroll */
+.reveal{ opacity:0; transform:translateY(30px); transition: all .7s ease-out; }
+.reveal.visible{ opacity:1; transform:translateY(0); }
 
-.service-card img {
-  height: 180px;
-  object-fit: cover;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
-}
-
-/* ========Hover en imagenes de las CARDS =============*/
-/* Efecto hover suave solo en imágenes */
-.service-card img {
-  transition: transform 0.4s ease, filter 0.3s ease;
-}
-.service-card:hover img {
-  transform: scale(1.08);
-  filter: brightness(1.08) saturate(1.1);
-}
-
-/* Evitar que el zoom corte la imagen: */
-.service-card { 
-    border-radius: 18px;
-    overflow: hidden;;
-}
-
-
-/* =================== Sección Fisioterapeuta ===================== /*
-
-/* Tono suave del título */
-.text-purple {
-  color: #8a3ffc;
-}
-
-/* Foto estilo */
-.therapist-photo {
-  max-height: 480px;
-  object-fit: cover;
-  border-radius: 20px;
-}
-
-/* Iconos con gradiente */
-.icon-box {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
+/* ======== Fisioterapeuta ======== */
+.text-purple{ color:#8a3ffc; }
+.therapist-photo{ max-height:480px; object-fit:cover; border-radius:20px; }
+.icon-box{
+  width:48px; height:48px; border-radius:12px;
   background: linear-gradient(135deg, #6284FF, #FF70B8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 20px;
+  color:#fff; display:flex; align-items:center; justify-content:center; font-size:20px;
 }
+.therapist-card{ background:#fff; border-radius:16px; border:1px solid rgba(0,0,0,.06); transition: all .3s ease; }
+.therapist-card:hover{ transform: translateY(-3px); box-shadow: 0 8px 22px rgba(0,0,0,.12); }
 
-/* Tarjetas suaves */
-.therapist-card {
-  background: #fff;
-  border-radius: 16px;
-  border: 1px solid rgba(0,0,0,0.06);
-  transition: all 0.3s ease;
-}
+/* ======== Contacto ======== */
+.contact-section{ background-color: var(--contact-dark); color:#eaeaea; margin-bottom:0 ; padding-bottom:0 ; }
+.footer-title{ color:#9aa4ff; font-weight:600; }
+.form-control-dark{ background:#1a233d; border:1px solid #2a3555; color:#fff; }
+.form-control-dark:focus{ background:#1a233d; border-color:#7b61ff; box-shadow: 0 0 0 .2rem rgba(123,97,255,.3); color:#fff; }
 
-.therapist-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
-}
-
-/* =================== Contacto y Ubicacion ======================= */
-
-/* Dark section background like your mockup */
-.contact-section {
-  background-color: #0e1630;
-  color: #eaeaea;
-}
-
-/* Section titles */
-.footer-title {
-  color: #9aa4ff;
-  font-weight: 600;
-}
-
-/* Inputs estilo dark premium */
-.form-control-dark {
-  background-color: #1a233d;
-  border: 1px solid #2a3555;
-  color: white;
-}
-.form-control-dark:focus {
-  background-color: #1a233d;
-  border-color: #7b61ff;
-  box-shadow: 0 0 0 0.2rem rgba(123, 97, 255, 0.3);
-  color: #fff;
-}
-
-/* Botón WhatsApp gradiente */
-.whatsapp-btn {
+/* Botón WhatsApp */
+.whatsapp-btn{
   background: linear-gradient(90deg, #6284FF, #FF70B8);
-  border: none;
-  color: white;
-  font-weight: 600;
-  padding: 10px;
-  border-radius: 8px;
+  border:none; color:#fff; font-weight:600; padding:10px; border-radius:8px;
 }
-.whatsapp-btn:hover {
-  opacity: 0.9;
-}
+.whatsapp-btn:hover{ opacity:.92; }
 
-/* Redes */
-.social-btn {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
+/* Redes sociales */
+.social-btn{
+  width:42px; height:42px; border-radius:50%;
   background: linear-gradient(120deg,#6284FF,#FF70B8);
-  color: white;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  transition: transform .25s;
-  margin-bottom: 10px ;
+  color:#fff; display:inline-flex; align-items:center; justify-content:center;
+  font-size:18px; transition: transform .25s;
+  margin-bottom: 10px;
 }
-.social-btn:hover {
-  transform: scale(1.1);
+.social-btn:hover{ transform: scale(1.1); }
+@media (max-width: 767px){
+  .social-title{ text-align:center ; }
+  .social-container{ justify-content:center ; gap:12px; }
 }
 
-/* Footer */
-.footer {
-  background-color: #0b1124;
-  color: white;
+/* ======== Footer ======== */
+.site-footer{ background-color: var(--footer-deep); color:#e8eaf6; margin-top:0 ; border-top:none ; }
+.text-footer-brand{ color:#9aa4ff; letter-spacing:.5px; }
+.text-footer-copy{ color:rgba(255,255,255,.65); }
+
+/* ======== Glow Zarvela ======== */
+.contact-highlight{
+  animation: zarvelaGlow 2s ease-in-out 3; border-radius:16px;
+}
+@keyframes zarvelaGlow{
+  0%{ box-shadow:0 0 0 rgba(215,156,167,0); }
+  50%{ box-shadow:0 0 22px rgba(215,156,167,.8), 0 0 42px rgba(232,200,157,.6); }
+  100%{ box-shadow:0 0 0 rgba(215,156,167,0); }
 }
 
-.icon-svg {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
+/* ✅ Estilo del campo */
+.form-control-dark {
+  background-color: #0f1629; /* o tu color */
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* ============= Redes sociales para desktop y mobile ================= */
-/* MOBILE */
-@media (max-width: 767px) {
-  .social-title {
-    text-align: center;
-  }
-  .social-container {
-    justify-content: center !important;
-    gap: 12px;
-  }
+/* ✅ Placeholder visible */
+.form-control-dark::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 
-/* DESKTOP */
-@media (min-width: 768px) {
-  .social-container {
-    justify-content: start;
-  }
+/* ✅ Textarea placeholder también */
+textarea.form-control-dark::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 
-
-/**************** FOOTER ***********************/
-
-
-/* Footer base */
-.site-footer {
-  background-color: #0b1124; /* Azul oscuro profundo */
-  color: #101b59; /* Gris claro azulado */
-  
-}
-
-/* Marca del footer */
-.text-footer-brand {
-  color: #ff9aa4; /* Azul suave */
-  letter-spacing: .5px;
-}
-
-/* Copyright */
-.text-footer-copy {
-  color: rgba(255,255,255,0.65);
+.whatsapp-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
 }
