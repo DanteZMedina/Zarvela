@@ -103,3 +103,13 @@ textarea.form-control-dark::placeholder {
   cursor: not-allowed;
   opacity: 0.4;
 }
+
+iframe {
+  max-width: 100%;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
