@@ -57,20 +57,71 @@ body {
 
 /* Botones */
 .btn, .btn-volver {
-  background: #e04891;
+  background: linear-gradient(90deg, #6284FF, #FF70B8);
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
+  text-align: center;
 }
-.btn:hover, .btn-volver:hover {
+/* .btn:hover, .btn-volver:hover {
   background: #c33f80;
+} */
+.btn-volver span { 
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
+
+.btn-volver span:after { 
+  content: '\00ab'; /* ← ahora apunta hacia la izquierda */
+  position: absolute;
+  opacity: 0;
+  left: -50px;
+  transition: 0s;
+}
+
+.btn-volver:hover span { 
+  padding-left: 25px;
+}
+.btn-volver:hover span::after { 
+  opacity: 1;
+  right: 0;
+}
+
 .center {
   text-align: center;
   margin: 2rem 0;
+}
+
+.btn_cards { 
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    margin-top: 5px;
+}
+
+/* ====== Mantener botones al fondo de las cards ====== */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* separa imagen+texto arriba y botón abajo */
+  height: 100%;
+}
+
+.service-card .card-body {
+  flex-grow: 1; /* hace que el cuerpo ocupe todo el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card .btn_cards {
+  align-self: center; /* centra horizontalmente el botón */
+  margin-top: auto; /* empuja el botón hacia el fondo */
 }
 
 /* Detalle */
@@ -144,7 +195,7 @@ body {
 
   /* 🔹 Ocultar el botón "Volver" en móvil */
   .btn-volver {
-    display: none !important;
+    display: none;
   }
 
   /* 🔹 Centrar el texto y reducir el padding del encabezado */
@@ -188,4 +239,13 @@ body {
 .modal-dialog-scrollable .modal-content {
   max-height: 90vh;
   overflow-y: auto;
+}
+
+/* Ajustar imágenes dentro de las cards sin distorsión */
+/* .service-card img {
+  object-fit: contain;
+} */
+
+#imgsarcopenia { 
+  object-fit: cover;
 }
