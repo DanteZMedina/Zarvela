@@ -91,12 +91,12 @@ body { background-color: #ffffff; }
 
 /* ✅ Placeholder visible */
 .form-control-dark::placeholder {
-  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6) ;
 }
 
 /* ✅ Textarea placeholder también */
 textarea.form-control-dark::placeholder {
-  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6) ;
 }
 
 .whatsapp-btn:disabled {
@@ -117,3 +117,4 @@ img {
 body, html {
   overflow-x: hidden;
 }
+
