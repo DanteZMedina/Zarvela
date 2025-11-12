@@ -184,3 +184,8 @@ body {
   }
 }
 
+/* === Modal scrollable */ 
+.modal-dialog-scrollable .modal-content {
+  max-height: 90vh;
+  overflow-y: auto;
+}
