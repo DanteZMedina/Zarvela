@@ -249,3 +249,53 @@ body {
 #imgsarcopenia { 
   object-fit: cover;
 }
+
+
+/* ====== Sección de contacto al final de las cards ====== */
+.consulta-patologia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.consulta-box {
+  max-width: 800px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Botón de WhatsApp */
+.whatsapp-consulta-btn {
+  background: linear-gradient(90deg, #6284FF, #FF70B8);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  min-width: 280px;
+  text-decoration: none;
+}
+
+.whatsapp-consulta-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Adaptación para móvil */
+@media (max-width: 768px) {
+  .consulta-box {
+    padding: 2rem 1.2rem;
+  }
+
+  .whatsapp-consulta-btn {
+    width: 100%;
+  }
+}
+
+#doubts_text { 
+  color:#333
+}
