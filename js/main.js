@@ -65,8 +65,8 @@ if (form){
     const phone = $("#phone")?.value.trim() || "";
     const message = $("#message").value.trim();
 
-    const text = `Hola, soy ${name}. Mi teléfono es ${phone}. ${message}`;
-    window.open(`https://wa.me/525524049904?text=${encodeURIComponent(text)}`, "_blank");
+    const text = `Hola, soy ${name}. Quiero platicar sobre: ${message}`;
+    window.open(`https://wa.me/525538799478?text=${encodeURIComponent(text)}`, "_blank");
   });
 }
 
