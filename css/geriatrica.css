@@ -208,25 +208,7 @@ body {
     padding: 0 1rem;
   }
 
-  /* 🔹 Centrar las cards y evitar desbordes laterales */
-  /* .grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-  }
 
-  .grid .card {
-    width: 90%;
-    max-width: 350px;
-    margin-bottom: 1.5rem;
-  }
-
-  .card img {
-    height: 160px;
-    object-fit: cover;
-  } */
 
   /* 🔹 Ajustar márgenes del contenedor principal */
   .detalle {

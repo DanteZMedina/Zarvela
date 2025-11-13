@@ -25,6 +25,50 @@ body { background-color: #ffffff; }
 .service-card .card-body{ transition: transform .35s ease; }
 .service-card:hover .card-body{ transform: translateY(-4px); }
 
+/* Asegura que todas las cards tengan igual estructura vertical */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Ajusta el contenido interno */
+.service-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Botones siempre al fondo */
+.service-card .btn {
+  margin-top: auto;
+  align-self: center;
+}
+
+.card_btn { 
+  background: linear-gradient(90deg, #6284FF, #FF70B8);
+  border:none;
+  
+}
+
+/* .card_btn { 
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    margin-top: 5px;
+} */
+
+/* ====== 5 cards por fila en escritorio ====== */
+@media (min-width: 1200px) {
+  .cards-grid > [class*="col-"] {
+    flex: 0 0 20%;   /* 100 / 5 = 20% */
+    max-width: 20%;
+  }
+}
+
+
 /* Reveal on scroll */
 .reveal{ opacity:0; transform:translateY(30px); transition: all .7s ease-out; }
 .reveal.visible{ opacity:1; transform:translateY(0); }
