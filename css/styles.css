@@ -49,8 +49,13 @@ body { background-color: #ffffff; }
 .card_btn { 
   background: linear-gradient(90deg, #6284FF, #FF70B8);
   border:none;
-  
 }
+
+a.card_btn { 
+  margin-top: 20px !important;
+ }
+
+
 
 /* .card_btn { 
     height: 40px;
