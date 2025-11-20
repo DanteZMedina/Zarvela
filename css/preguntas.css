@@ -1,0 +1,70 @@
+/* Card contenedora */
+.faq-card {
+  max-width: 780px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+  border: 1px solid #f2f2f2;
+}
+
+/* Elimina efectos del flush */
+.accordion-item {
+  border: none ;
+}
+
+/* Botón (pregunta) */
+.accordion-button {
+  background: #fff ;
+  border-radius: 10px ;
+  border: 1px solid #eaeaea;
+  font-size: 15.5px;
+  font-weight: 500;
+  padding: 18px 16px;
+  color: #333 ;
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.accordion-button:hover {
+  background: #fafafa ;
+  border-color: #dcdcdc;
+}
+
+/* Quitar sombras */
+.accordion-button:focus {
+  box-shadow: none ;
+}
+
+/* Flecha */
+.accordion-button::after {
+  width: 20px;
+  height: 20px;
+  filter: invert(55%) sepia(15%) saturate(350%) hue-rotate(180deg);
+}
+
+/* Estado abierto */
+.accordion-button:not(.collapsed) {
+  background: #fafafa ;
+  border-color: #dcd5ff;
+  color: #6a4ff5 ;
+}
+
+/* Cuerpo */
+.accordion-body {
+  padding: 16px 20px;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.65;
+  border-left: 3px solid #dcd5ff;
+  border-right: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+  border-radius: 0 0 10px 10px;
+  text-align: left;
+}
+
+
+#doubts_section { 
+    color: #555;
+}
