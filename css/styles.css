@@ -6,11 +6,16 @@
   --contact-dark: #0e1630;
 }
 html { scroll-behavior: smooth; }
-body { background-color: #ffffff; }
+body { background-color: #ffffff; 
+font-family: 'Poppins', sans-serif;}
 
 /* Navbar */
 .logo-nav{ height:48px; width:auto; object-fit:contain; }
 @media (max-width: 768px){ .logo-nav{ height:40px; } }
+
+.navbar a:hover {
+  color: #e04891;
+}
 
 /* ======== Hero ======== */
 .hero{
