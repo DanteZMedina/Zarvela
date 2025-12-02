@@ -41,32 +41,26 @@
 
     </nav>
 
-    <section class="detalle reveal">
+    <section class="detalle">
         <div style="text-align: left;">
-            <button class="btn-volver" onclick="window.location.href='../index.html'">
-                <span>Volver</span>
-            </button>
+            <button class="btn-volver" onclick="window.location.href='../index.html'"> <span>Volver</span></button>
         </div>
 
+
         <h1>Fisioterapia Oncológica</h1>
-        <p>
+        <p class="detalle-descripcion">
             Tratamientos especializados para pacientes con cáncer, enfocados en mejorar la calidad de vida,
             aliviar síntomas y apoyar la recuperación durante y después del tratamiento oncológico.
         </p>
-
-        <!-- ========== GRID DE PATOLOGÍAS (SOLO CARDS) ========== -->
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4 justify-content-center ">
-
-            <!-- CARD: Cáncer de mama -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4 justify-content-center reveal">
             <div class="col-sm-10 col-md-6 col-lg-2">
                 <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
                     data-bs-target="#modalCancerMama">
-                    <img src="../img/oncologica/cancerMama.png" class="card-img-top" alt="Cáncer de mama">
+                    <img src="../img/caidas.png" class="card-img-top" alt="Prevención de Caídas | Síndrome de caídas">
                     <div class="card-body text-center">
-                        <h5 class="fw-bold text-dark">Cancer de mama.</h5>
+                        <h5 class="fw-bold text-dark">Cáncer de mama</h5>
                         <p class="text-muted small mb-0">
-                            Programas adecuados para la rehabilitación postquirúrgica, manejo de linfedema y mejora de
-                            la movilidad.
+                            Rehabilitación postquirúrgica, manejo de linfedema y recuperación funcional del hombro.
                         </p>
                         <button class="btn btn_cards"> Saber más </button>
                     </div>
@@ -81,10 +75,9 @@
                     <div class="card-body text-center">
                         <h5 class="fw-bold text-dark">Cáncer tiroideo</h5>
                         <p class="text-muted small mb-0">
-                            Rehabilitación postquirúrgica de cuello, manejo de cicatriz y apoyo funcional tras
-                            tiroidectomía.
+                            Terapia especializada tras tiroidectomía: movilidad cervical, manejo de cicatriz y voz.
                         </p>
-                        <button class="btn btn_cards"> Saber más </button>
+                        <button class="btn btn_cards">Saber más</button>
                     </div>
                 </div>
             </div>
@@ -99,55 +92,70 @@
                         <p class="text-muted small mb-0">
                             Rehabilitación postquirúrgica, suelo pélvico masculino y recuperación funcional.
                         </p>
-                        <button class="btn btn_cards"> Saber más </button>
+                        <button class="btn btn_cards">Saber más</button>
                     </div>
                 </div>
             </div>
+        </div>
 
-        </div> <!-- ⬅️ AQUÍ SÍ SE CIERRA EL ROW DE CARDS -->
-
-        <!-- ========== MODALES (FUERA DEL ROW, NO AFECTAN GRID) ========== -->
-
-        <!-- MODAL: Cáncer de mama -->
+        <!-- ===== MODAL: CÁNCER DE MAMA ===== -->
         <div class="modal fade" id="modalCancerMama" tabindex="-1" aria-labelledby="modalCancerMamaLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
                 <div class="modal-content rounded-4 border-0">
+
+                    <!-- HEADER -->
                     <div class="modal-header border-0"
                         style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
                         <h5 class="modal-title fw-bold" id="modalCancerMamaLabel">Cáncer de mama</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                             aria-label="Cerrar"></button>
                     </div>
+
+                    <!-- BODY -->
                     <div class="modal-body px-4 py-3 text-start">
+
                         <p class="mb-3">
-                            En Zarvela ofrecemos programas especializados de fisioterapia para mujeres que se
-                            encuentran en proceso de recuperación por <strong>cáncer de mama</strong>, ya sea en
-                            etapa postquirúrgica, durante el tratamiento o en la fase de rehabilitación.
+                            El <strong>cáncer de mama</strong> y sus tratamientos (cirugía, quimioterapia o
+                            radioterapia)
+                            pueden generar dolor, limitación de movimiento, linfedema y dificultades para retomar
+                            actividades
+                            cotidianas. En Zarvela acompañamos la recuperación desde un enfoque funcional, progresivo y
+                            respetuoso del proceso emocional.
                         </p>
-                        <p class="mb-3">
-                            Nuestro abordaje busca mejorar la <strong>movilidad del hombro</strong>, disminuir el
-                            <strong>dolor</strong>, tratar el <strong>linfedema</strong> y recuperar la
-                            funcionalidad necesaria para las actividades de la vida diaria.
-                        </p>
-                        <ul class="mb-3">
-                            <li>Evaluación de movilidad del hombro y cicatrices</li>
-                            <li>Manejo y drenaje del linfedema</li>
-                            <li>Terapia para reducir fibrosis y adherencias</li>
-                            <li>Ejercicios para recuperar fuerza y rango de movimiento</li>
-                            <li>Reeducación postural y respiratoria</li>
-                            <li>Educación para autocuidado y prevención de complicaciones</li>
-                        </ul>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
                         <p>
-                            Nuestro objetivo es acompañar a cada paciente en una recuperación segura, progresiva
-                            y respetuosa de su proceso físico y emocional.
+                            Nuestro objetivo es <strong>recuperar la movilidad del hombro</strong>, disminuir dolor,
+                            mejorar la
+                            postura, prevenir o tratar el <strong>linfedema</strong> y restaurar la funcionalidad
+                            necesaria para
+                            las actividades de la vida diaria.
                         </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
+                        <ul>
+                            <li>Evaluación funcional del hombro, cicatrices y postura.</li>
+                            <li>Manejo y drenaje del linfedema.</li>
+                            <li>Terapia para reducir adherencias y fibrosis.</li>
+                            <li>Ejercicios para mejorar fuerza, movilidad y rango de movimiento.</li>
+                            <li>Entrenamiento respiratorio y reeducación postural.</li>
+                            <li>Educación para autocuidado y prevención de complicaciones.</li>
+                        </ul>
+
+                        <div class="alert alert-light border-start border-4 border-primary mt-4">
+                            <strong>Indicaciones:</strong> Recomendado para pacientes que presentan dolor, rigidez de
+                            hombro,
+                            inflamación, linfedema, limitación funcional o molestias posteriores a cirugía de mama.
+                        </div>
                     </div>
+
+                    <!-- FOOTER -->
                     <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
                         <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
                             <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
                         </button>
-                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoraci%C3%B3n%20para%20fisioterapia%20por%20c%C3%A1ncer%20de%20mama."
+                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20cáncer%20de%20mama."
                             class="btn btn-primary fw-semibold whatsapp-btn">
                             <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
                         </a>
@@ -156,46 +164,63 @@
             </div>
         </div>
 
-        <!-- MODAL: Cáncer tiroideo -->
+        <!-- ===== MODAL: CÁNCER TIROIDEO ===== -->
         <div class="modal fade" id="modalCancerTiroideo" tabindex="-1" aria-labelledby="modalCancerTiroideoLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
                 <div class="modal-content rounded-4 border-0">
+
+                    <!-- HEADER -->
                     <div class="modal-header border-0"
                         style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
                         <h5 class="modal-title fw-bold" id="modalCancerTiroideoLabel">Cáncer tiroideo</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                             aria-label="Cerrar"></button>
                     </div>
+
+                    <!-- BODY -->
                     <div class="modal-body px-4 py-3 text-start">
+
                         <p class="mb-3">
-                            En Zarvela ofrecemos fisioterapia especializada para la recuperación posterior a
-                            <strong>tiroidectomías totales o parciales</strong>, ayudando a mejorar la movilidad
-                            del cuello, disminuir molestias y prevenir complicaciones.
+                            Tras una <strong>tiroidectomía total o parcial</strong>, es común presentar rigidez
+                            cervical,
+                            dolor, cambios en la postura, tensión muscular y molestias en la cicatriz. En algunos casos
+                            pueden
+                            presentarse alteraciones respiratorias o de voz debido a la cercanía de estructuras
+                            nerviosas.
                         </p>
-                        <p class="mb-3">
-                            Tras la cirugía de tiroides es común presentar <strong>rigidez cervical, dolor, tirantez
-                                de la cicatriz,</strong> y en algunos casos alteraciones en la voz. Nuestro tratamiento
-                            está orientado a una rehabilitación funcional, segura y progresiva.
-                        </p>
-                        <ul class="mb-3">
-                            <li>Movilización suave y progresiva del cuello</li>
-                            <li>Tratamiento de cicatriz para evitar adherencias</li>
-                            <li>Ejercicios para mejorar la postura cervical</li>
-                            <li>Manejo del dolor y la inflamación</li>
-                            <li>Técnicas respiratorias y relajación muscular</li>
-                            <li>Ejercicios para mejorar la función vocal (en caso necesario)</li>
-                        </ul>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
                         <p>
-                            Trabajamos para que cada paciente recupere su movilidad, disminuya el malestar y retome
-                            sus actividades con comodidad y confianza.
+                            Ayudamos al paciente a <strong>recuperar la movilidad del cuello</strong>, mejorar la
+                            cicatriz,
+                            disminuir la tensión muscular y optimizar la respiración y la función vocal cuando es
+                            necesario.
                         </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
+                        <ul>
+                            <li>Movilización suave y progresiva del cuello.</li>
+                            <li>Tratamiento de cicatriz para evitar adherencias y molestias.</li>
+                            <li>Ejercicios respiratorios y de voz.</li>
+                            <li>Reeducación postural para disminuir compensaciones.</li>
+                            <li>Técnicas para reducir tensión muscular cervical.</li>
+                        </ul>
+
+                        <div class="alert alert-light border-start border-4 border-primary mt-4">
+                            <strong>Indicaciones:</strong> Ideal para pacientes con rigidez cervical, dolor
+                            postquirúrgico,
+                            molestias en la cicatriz, cambios posturales o dificultad respiratoria leve tras
+                            tiroidectomía.
+                        </div>
+
                     </div>
+
                     <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
                         <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
                             <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
                         </button>
-                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoraci%C3%B3n%20para%20fisioterapia%20por%20c%C3%A1ncer%20tiroideo."
+                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20cáncer%20tiroideo."
                             class="btn btn-primary fw-semibold whatsapp-btn">
                             <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
                         </a>
@@ -204,70 +229,80 @@
             </div>
         </div>
 
-        <!-- MODAL: Cáncer de próstata -->
+        <!-- ===== MODAL: CÁNCER DE PRÓSTATA ===== -->
         <div class="modal fade" id="modalCancerProstata" tabindex="-1" aria-labelledby="modalCancerProstataLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
                 <div class="modal-content rounded-4 border-0">
+
                     <div class="modal-header border-0"
                         style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
                         <h5 class="modal-title fw-bold" id="modalCancerProstataLabel">Cáncer de próstata</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Cerrar"></button>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                     </div>
+
                     <div class="modal-body px-4 py-3 text-start">
+
                         <p class="mb-3">
-                            En Zarvela ofrecemos fisioterapia especializada para hombres que se encuentran en
-                            recuperación tras tratamientos por <strong>cáncer de próstata</strong>,
-                            incluyendo prostatectomía, radioterapia u otros procedimientos médicos.
+                            Después de una prostatectomía, radioterapia u otros tratamientos, muchos hombres
+                            experimentan
+                            <strong>incontinencia urinaria, dolor pélvico, debilidad del suelo pélvico y limitaciones
+                                funcionales</strong>. La fisioterapia masculina especializada puede acelerar y optimizar
+                            la
+                            recuperación.
                         </p>
-                        <p class="mb-3">
-                            Nuestro enfoque se centra en mejorar el <strong>control urinario</strong>, fortalecer el
-                            <strong>suelo pélvico masculino</strong>, reducir el dolor pélvico y recuperar la
-                            funcionalidad global del paciente.
-                        </p>
-                        <ul class="mb-3">
-                            <li>Fortalecimiento del suelo pélvico masculino (Kegel adaptado)</li>
-                            <li>Técnicas para mejorar el control urinario e incontinencia</li>
-                            <li>Manejo del dolor pélvico y lumbar</li>
-                            <li>Movilización suave postquirúrgica</li>
-                            <li>Ejercicios de postura y respiración diafragmática</li>
-                            <li>Educación sobre hábitos que favorecen la recuperación</li>
-                        </ul>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
                         <p>
-                            Nuestro programa acompaña al paciente en una recuperación progresiva, segura y respetuosa,
-                            mejorando su calidad de vida y funcionalidad diaria.
+                            Nuestro objetivo es restaurar el <strong>control urinario</strong>, mejorar la fuerza del
+                            <strong>suelo pélvico masculino</strong>, disminuir dolor y recuperar la funcionalidad
+                            corporal.
                         </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
+                        <ul>
+                            <li>Fortalecimiento del suelo pélvico masculino (Kegel adaptado).</li>
+                            <li>Técnicas para mejorar control urinario e incontinencia.</li>
+                            <li>Manejo del dolor pélvico y lumbar.</li>
+                            <li>Movilización suave postquirúrgica.</li>
+                            <li>Ejercicios de respiración diafragmática y postura.</li>
+                        </ul>
+
+                        <div class="alert alert-light border-start border-4 border-primary mt-4">
+                            <strong>Indicaciones:</strong> Recomendado para pacientes con incontinencia, dolor pélvico,
+                            debilidad muscular o limitaciones posteriores a tratamiento por cáncer de próstata.
+                        </div>
+
                     </div>
+
                     <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
                         <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
                             <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
                         </button>
-                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoraci%C3%B3n%20para%20fisioterapia%20por%20c%C3%A1ncer%20de%20pr%C3%B3stata."
+                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20cáncer%20de%20próstata."
                             class="btn btn-primary fw-semibold whatsapp-btn">
                             <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
                         </a>
                     </div>
+
                 </div>
             </div>
         </div>
-
-        <!-- ====== Sección de contacto para dudas ====== -->
-        <div class="row mt-4">
-            <div class="col-12 d-flex justify-content-center">
-                <div class="consulta-box p-4 rounded-4 shadow bg-white text-center" style="max-width: 600px;">
-                    <h5 class="fw-bold mb-4" id="doubts_text">
-                        ¿No encontraste tu patología? Escríbenos y con gusto aclaramos tus dudas
-                    </h5>
-                    <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20más%20información%20sobre%20fisioterapia%20oncológica."
-                        class="btn whatsapp-consulta-btn px-4 py-2 fw-semibold d-inline-flex align-items-center justify-content-center">
-                        <i class="fa-brands fa-whatsapp me-2 fs-5"></i> Contactar por WhatsApp
-                    </a>
-                </div>
+         <!--======Sección de contacto para dudas======-->
+        <section class="consulta-patologia mt-5 mb-5">
+            <div
+                class="container d-flex flex-column align-items-center text-center p-4 rounded-4 shadow bg-white consulta-box">
+                <h5 class="fw-bold mb-4" id="doubts_text">
+                    ¿No encontraste tu patología? Escríbenos y con gusto aclaramos tus dudas
+                </h5>
+                <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20más%20información%20sobre%20fisioterapia%20geriátrica."
+                    class="btn whatsapp-consulta-btn d-inline-flex align-items-center justify-content-center px-4 py-2 fw-semibold">
+                    <i class="fa-brands fa-whatsapp me-2 fs-5"></i> Contactar por WhatsApp
+                </a>
             </div>
-        </div>
-
+        </section>
     </section>
+
 
 
     <!-- Ubicación -->
