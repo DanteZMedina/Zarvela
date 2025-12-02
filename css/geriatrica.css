@@ -1,10 +1,16 @@
-/* General */
+/* ============================================================
+   VARIABLES GENERALES
+============================================================ */
+html {
+  overflow-y: scroll; /* Previene salto del navbar */
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, #5a60f5, #ff8ac0);
   color: #222;
-  padding-top: 80px; /* ajusta según la altura real del navbar */
+  padding-top: 80px; /* Ajusta a altura real del navbar */
+  background: linear-gradient(135deg, #5a60f5, #ff8ac0);
 }
 
 
@@ -23,37 +29,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Cards */
-/* .servicios, .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-}
-.card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-.card h3 {
-  margin: 0.8rem;
-  color: #222;
-}
-.card p {
-  margin: 0 0.8rem 1rem;
-  color: #555;
-} */
 
 /* Botones */
 .btn, .btn-volver {
@@ -124,6 +99,17 @@ body {
   margin-top: auto; /* empuja el botón hacia el fondo */
 }
 
+.reveal{ 
+  opacity:0; 
+  transform:translateY(30px); 
+  transition: all .7s ease-out; 
+}
+
+.reveal.visible{ 
+  opacity:1; 
+  transform:translateY(0); 
+}
+
 /* Detalle */
 .detalle {
   padding: 3rem 2rem;
@@ -183,12 +169,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Tarjetas hover mejorado */
-/* .service-card:hover {
-  transform: translateY(-6px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-} */
+
 
 /* ======== Ajustes Responsive para Geriátrica ======== */
 @media (max-width: 768px) {
@@ -223,10 +204,16 @@ body {
   overflow-y: auto;
 }
 
-/* Ajustar imágenes dentro de las cards sin distorsión */
-/* .service-card img {
-  object-fit: contain;
-} */
+body.modal-open {
+    overflow-y: hidden;
+    padding-right: 0 !important;
+}
+
+.modal {
+    padding-right: 0 !important;
+}
+
+
 
 #imgsarcopenia { 
   object-fit: cover;
