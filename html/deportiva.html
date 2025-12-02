@@ -47,50 +47,55 @@
         </div>
 
 
-        <h1>Fisioterapia Oncológica</h1>
+        <h1>Fisioterapia Deportiva</h1>
         <p class="detalle-descripcion">
-            Tratamientos especializados para pacientes con cáncer, enfocados en mejorar la calidad de vida,
-            aliviar síntomas y apoyar la recuperación durante y después del tratamiento oncológico.
+            La fisioterapia deportiva está enfocada en prevenir, tratar y recuperar lesiones relacionadas con la
+            actividad física, ya sea en deportistas profesionales, amateurs o personas que realizan ejercicio de manera
+            recreativa.
         </p>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4 justify-content-center reveal">
+            <!-- Card: Desgarres musculares -->
             <div class="col-sm-10 col-md-6 col-lg-2">
                 <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
-                    data-bs-target="#modalCancerMama">
-                    <img src="../img/oncologica/cancerMama.png" class="card-img-top" alt="Cáncer de mama">
+                    data-bs-target="#modalDesgarre">
+                    <img src="../img/deportivo/desgarres.png" class="card-img-top" alt="Desgarres musculares">
                     <div class="card-body text-center">
-                        <h5 class="fw-bold text-dark">Cáncer de mama</h5>
+                        <h5 class="fw-bold text-dark">Desgarres musculares</h5>
                         <p class="text-muted small mb-0">
-                            Rehabilitación postquirúrgica, manejo de linfedema y recuperación funcional del hombro.
+                            Lesión por ruptura parcial de fibras musculares. Tratamiento para aliviar el dolor, reducir
+                            inflamación y recuperar fuerza y movilidad.
                         </p>
                         <button class="btn btn_cards"> Saber más </button>
                     </div>
                 </div>
             </div>
 
-            <!-- CARD: Cáncer tiroideo -->
+            <!-- CARD: Contusiones -->
             <div class="col-sm-10 col-md-6 col-lg-2">
                 <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
-                    data-bs-target="#modalCancerTiroideo">
-                    <img src="../img/oncologica/cancerTiroideo.png" class="card-img-top" alt="Cáncer tiroideo">
+                    data-bs-target="#modalContusiones">
+                    <img src="../img/deportivo/contusiones.png" class="card-img-top" alt="Contusiones">
                     <div class="card-body text-center">
-                        <h5 class="fw-bold text-dark">Cáncer tiroideo</h5>
+                        <h5 class="fw-bold text-dark">Contusiones</h5>
                         <p class="text-muted small mb-0">
-                            Terapia especializada tras tiroidectomía: movilidad cervical, manejo de cicatriz y voz.
+                            Tratamiento para golpes y moretones que causan dolor e inflamación, ayudando a recuperar la
+                            movilidad y prevenir complicaciones.
                         </p>
                         <button class="btn btn_cards">Saber más</button>
                     </div>
                 </div>
             </div>
 
-            <!-- CARD: Cáncer de próstata -->
+            <!-- CARD: Posoperatorios -->
             <div class="col-sm-10 col-md-6 col-lg-2">
                 <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
-                    data-bs-target="#modalCancerProstata">
-                    <img src="../img/oncologica/cancerProstata.png" class="card-img-top" alt="Cáncer de próstata">
+                    data-bs-target="#modalPosoperatorios">
+                    <img src="../img/deportivo/posoperatorios.png" class="card-img-top" alt="Posoperatorios">
                     <div class="card-body text-center">
-                        <h5 class="fw-bold text-dark">Cáncer de próstata</h5>
+                        <h5 class="fw-bold text-dark">Posoperatorios</h5>
                         <p class="text-muted small mb-0">
-                            Rehabilitación postquirúrgica, suelo pélvico masculino y recuperación funcional.
+                            Rehabilitación especializada para recuperar movilidad, fuerza y funcionalidad tras cirugía
+                            ortopédica.
                         </p>
                         <button class="btn btn_cards">Saber más</button>
                     </div>
@@ -98,8 +103,8 @@
             </div>
         </div>
 
-        <!-- ===== MODAL: CÁNCER DE MAMA ===== -->
-        <div class="modal fade" id="modalCancerMama" tabindex="-1" aria-labelledby="modalCancerMamaLabel"
+        <!-- ===== MODAL: Desgarres musculares ===== -->
+        <div class="modal fade" id="modalDesgarre" tabindex="-1" aria-labelledby="modalDesgarreLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
                 <div class="modal-content rounded-4 border-0">
@@ -107,7 +112,7 @@
                     <!-- HEADER -->
                     <div class="modal-header border-0"
                         style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
-                        <h5 class="modal-title fw-bold" id="modalCancerMamaLabel">Cáncer de mama</h5>
+                        <h5 class="modal-title fw-bold" id="modalCancerMamaLabel">Desgarres Musculares</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                             aria-label="Cerrar"></button>
                     </div>
@@ -116,37 +121,40 @@
                     <div class="modal-body px-4 py-3 text-start">
 
                         <p class="mb-3">
-                            El <strong>cáncer de mama</strong> y sus tratamientos (cirugía, quimioterapia o
-                            radioterapia)
-                            pueden generar dolor, limitación de movimiento, linfedema y dificultades para retomar
-                            actividades
-                            cotidianas. En Zarvela acompañamos la recuperación desde un enfoque funcional, progresivo y
-                            respetuoso del proceso emocional.
+                            Un <strong>desgarre muscular</strong> es una lesión frecuente que ocurre cuando las fibras
+                            del músculo se estiran más allá de su capacidad o se rompen parcialmente. Puede presentarse
+                            por movimientos bruscos, sobrecarga, mala técnica, fatiga o falta de calentamiento previo.
+                            Esta lesión genera dolor, inflamación, limitación del movimiento y pérdida de fuerza.
                         </p>
 
                         <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
                         <p>
-                            Nuestro objetivo es <strong>recuperar la movilidad del hombro</strong>, disminuir dolor,
-                            mejorar la
-                            postura, prevenir o tratar el <strong>linfedema</strong> y restaurar la funcionalidad
-                            necesaria para
-                            las actividades de la vida diaria.
+                            Nuestro objetivo es <strong>reducir el dolor, acelerar la reparación del tejido y recuperar
+                                la fuerza y movilidad del músculo afectado.</strong> Buscamos que el paciente retorne a
+                            su actividad deportiva o funcional con seguridad, evitando recaídas o secuelas.
                         </p>
 
                         <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
                         <ul>
-                            <li>Evaluación funcional del hombro, cicatrices y postura.</li>
-                            <li>Manejo y drenaje del linfedema.</li>
-                            <li>Terapia para reducir adherencias y fibrosis.</li>
-                            <li>Ejercicios para mejorar fuerza, movilidad y rango de movimiento.</li>
-                            <li>Entrenamiento respiratorio y reeducación postural.</li>
-                            <li>Educación para autocuidado y prevención de complicaciones.</li>
+                            <li>Evaluación clínica detallada para identificar el grado del desgarre y el tejido
+                                comprometido.</li>
+                            <li>Manejo del dolor e inflamación, incluyendo técnicas de fisioterapia específicas.</li>
+                            <li>Terapia manual para mejorar la circulación y favorecer la recuperación del tejido.</li>
+                            <li>Ejercicios isométricos, progresados a isotónicos, para recuperar la fuerza sin
+                                comprometer la lesión.</li>
+                            <li>Reeducación del movimiento y corrección de compensaciones generadas por el dolor.</li>
+                            <li>Fortalecimiento progresivo según la zona afectada y el nivel de actividad del paciente.
+                            </li>
+                            <li>Entrenamiento funcional y deportivo, orientado al retorno seguro a la actividad física.
+                            </li>
+                            <li>Prevención de recaídas, enseñando técnicas adecuadas, calentamiento, estiramientos y
+                                hábitos de autocuidado.</li>
                         </ul>
 
                         <div class="alert alert-light border-start border-4 border-primary mt-4">
-                            <strong>Indicaciones:</strong> Recomendado para pacientes que presentan dolor, rigidez de
-                            hombro,
-                            inflamación, linfedema, limitación funcional o molestias posteriores a cirugía de mama.
+                            <strong>Ideal para:</strong> personas que experimentan dolor muscular agudo, inflamación,
+                            hematomas, limitación de movimiento, dificultad para contraer el músculo o lesiones por
+                            sobrecarga durante la actividad física.
                         </div>
                     </div>
 
@@ -155,7 +163,7 @@
                         <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
                             <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
                         </button>
-                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20cáncer%20de%20mama."
+                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20desgarre%20muscular."
                             class="btn btn-primary fw-semibold whatsapp-btn">
                             <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
                         </a>
@@ -164,8 +172,8 @@
             </div>
         </div>
 
-        <!-- ===== MODAL: CÁNCER TIROIDEO ===== -->
-        <div class="modal fade" id="modalCancerTiroideo" tabindex="-1" aria-labelledby="modalCancerTiroideoLabel"
+        <!-- ===== MODAL: Contusiones ===== -->
+        <div class="modal fade" id="modalContusiones" tabindex="-1" aria-labelledby="modalContusionesLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
                 <div class="modal-content rounded-4 border-0">
@@ -173,7 +181,7 @@
                     <!-- HEADER -->
                     <div class="modal-header border-0"
                         style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
-                        <h5 class="modal-title fw-bold" id="modalCancerTiroideoLabel">Cáncer tiroideo</h5>
+                        <h5 class="modal-title fw-bold" id="modalContusionesLabel">Contusiones</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                             aria-label="Cerrar"></button>
                     </div>
@@ -182,36 +190,42 @@
                     <div class="modal-body px-4 py-3 text-start">
 
                         <p class="mb-3">
-                            Tras una <strong>tiroidectomía total o parcial</strong>, es común presentar rigidez
-                            cervical,
-                            dolor, cambios en la postura, tensión muscular y molestias en la cicatriz. En algunos casos
-                            pueden
-                            presentarse alteraciones respiratorias o de voz debido a la cercanía de estructuras
-                            nerviosas.
+                            Las <strong>contusiones musculares</strong> son golpes directos sobre el músculo o tejidos
+                            blandos que producen
+                            dolor, inflamación y moretones (equimosis), sin llegar a romper la piel.
+                            Son frecuentes en <strong>deportes de contacto, caídas o impactos durante la actividad
+                                física</strong>.
                         </p>
 
                         <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
                         <p>
-                            Ayudamos al paciente a <strong>recuperar la movilidad del cuello</strong>, mejorar la
-                            cicatriz,
-                            disminuir la tensión muscular y optimizar la respiración y la función vocal cuando es
-                            necesario.
+                            En Zarvela Fisioterapia buscamos <strong>disminuir el dolor y la inflamación</strong>,
+                            acelerar la recuperación del tejido lesionado y <strong>restablecer la movilidad y la
+                                fuerza</strong>
+                            del área afectada, para que la persona pueda volver a sus actividades de forma segura.
                         </p>
 
                         <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
                         <ul>
-                            <li>Movilización suave y progresiva del cuello.</li>
-                            <li>Tratamiento de cicatriz para evitar adherencias y molestias.</li>
-                            <li>Ejercicios respiratorios y de voz.</li>
-                            <li>Reeducación postural para disminuir compensaciones.</li>
-                            <li>Técnicas para reducir tensión muscular cervical.</li>
+                            <li>Valoración del rango de movimiento, dolor y tipo de contusión.</li>
+                            <li>Medidas iniciales para controlar inflamación (según fase y recomendación médica).</li>
+                            <li>Terapia manual suave para mejorar la circulación y reducir la tensión muscular.</li>
+                            <li>Ejercicios progresivos de movilidad y fortalecimiento del músculo afectado.</li>
+                            <li>Trabajo de flexibilidad y control neuromuscular para recuperar la función.</li>
+                            <li>Educación sobre cuidados en casa y tiempos seguros de regreso al deporte.</li>
                         </ul>
 
+                        <p>
+                            El tratamiento se adapta a la <strong>fase de la lesión</strong> (aguda o subaguda) y al
+                            tipo de deporte o actividad
+                            que realiza la persona, para evitar recaídas y favorecer una recuperación completa.
+                        </p>
+
                         <div class="alert alert-light border-start border-4 border-primary mt-4">
-                            <strong>Indicaciones:</strong> Ideal para pacientes con rigidez cervical, dolor
-                            postquirúrgico,
-                            molestias en la cicatriz, cambios posturales o dificultad respiratoria leve tras
-                            tiroidectomía.
+                            <strong>Indicaciones:</strong> Ideal para personas que han sufrido un golpe directo en
+                            músculo o articulación
+                            y presentan dolor, moretón, inflamación o dificultad para mover la zona afectada,
+                            especialmente deportistas o personas físicamente activas.
                         </div>
 
                     </div>
@@ -220,7 +234,7 @@
                         <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
                             <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
                         </button>
-                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20cáncer%20tiroideo."
+                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20contusiones."
                             class="btn btn-primary fw-semibold whatsapp-btn">
                             <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
                         </a>
@@ -229,48 +243,65 @@
             </div>
         </div>
 
-        <!-- ===== MODAL: CÁNCER DE PRÓSTATA ===== -->
-        <div class="modal fade" id="modalCancerProstata" tabindex="-1" aria-labelledby="modalCancerProstataLabel"
+        <!-- ===== MODAL: posoperatorios ===== -->
+        <div class="modal fade" id="modalPosoperatorios" tabindex="-1" aria-labelledby="modalPosoperatoriosLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
                 <div class="modal-content rounded-4 border-0">
 
                     <div class="modal-header border-0"
                         style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
-                        <h5 class="modal-title fw-bold" id="modalCancerProstataLabel">Cáncer de próstata</h5>
+                        <h5 class="modal-title fw-bold" id="modalPosoperatoriosLabel">Posoperatorios</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                     </div>
 
                     <div class="modal-body px-4 py-3 text-start">
 
                         <p class="mb-3">
-                            Después de una prostatectomía, radioterapia u otros tratamientos, muchos hombres
-                            experimentan
-                            <strong>incontinencia urinaria, dolor pélvico, debilidad del suelo pélvico y limitaciones
-                                funcionales</strong>. La fisioterapia masculina especializada puede acelerar y optimizar
-                            la
-                            recuperación.
+                            El <strong>posoperatorio de rodilla, cadera y columna</strong> es una etapa clave para
+                            lograr una recuperación segura y
+                            funcional después de una cirugía ortopédica como artroplastías, reparaciones ligamentarias,
+                            fijaciones vertebrales
+                            o descompresiones. Tras estas intervenciones, es común presentar <strong>dolor, inflamación,
+                                rigidez, dificultad para caminar
+                                y pérdida de fuerza</strong>, por lo que la fisioterapia especializada es fundamental
+                            para restaurar la movilidad y la calidad de vida.
                         </p>
 
                         <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
                         <p>
-                            Nuestro objetivo es restaurar el <strong>control urinario</strong>, mejorar la fuerza del
-                            <strong>suelo pélvico masculino</strong>, disminuir dolor y recuperar la funcionalidad
-                            corporal.
+                            En Zarvela trabajamos para <strong>reducir el dolor, mejorar la movilidad y recuperar la
+                                función</strong> del área operada a través de
+                            un programa progresivo y personalizado. Nuestro objetivo es ayudar al paciente a recuperar
+                            su independencia,
+                            mejorar su estabilidad y evitar complicaciones como rigidez, adherencias o debilidad
+                            muscular prolongada.
                         </p>
 
                         <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
                         <ul>
-                            <li>Fortalecimiento del suelo pélvico masculino (Kegel adaptado).</li>
-                            <li>Técnicas para mejorar control urinario e incontinencia.</li>
-                            <li>Manejo del dolor pélvico y lumbar.</li>
-                            <li>Movilización suave postquirúrgica.</li>
-                            <li>Ejercicios de respiración diafragmática y postura.</li>
+                            <li>Evaluación inicial del dolor, movilidad, fuerza y marcha.</li>
+                            <li>Movilización articular suave y segura según el tipo de cirugía.</li>
+                            <li>Ejercicios progresivos de fortalecimiento (rodilla, cadera, core, espalda).</li>
+                            <li>Entrenamiento de la marcha con o sin ayudas técnicas (bastón, andador).</li>
+                            <li>Terapia manual para cicatriz, tejido blando y reducción de tensión.</li>
+                            <li>Trabajo de estabilidad lumbopélvica y control motor.</li>
+                            <li>Reeducación postural y recomendaciones para actividades diarias.</li>
+                            <li>Progresiones funcionales para reincorporación segura a la vida cotidiana.</li>
                         </ul>
 
+                        <p>
+                            La rehabilitación se adapta a la <strong>fase de recuperación</strong>, tipo de cirugía y
+                            objetivos del paciente,
+                            asegurando un retorno seguro y eficiente a sus actividades diarias o deportivas.
+                        </p>
+
                         <div class="alert alert-light border-start border-4 border-primary mt-4">
-                            <strong>Indicaciones:</strong> Recomendado para pacientes con incontinencia, dolor pélvico,
-                            debilidad muscular o limitaciones posteriores a tratamiento por cáncer de próstata.
+                            <strong>Indicaciones:</strong> Ideal para pacientes que presentan dolor persistente,
+                            rigidez, dificultad para caminar,
+                            debilidad muscular, limitación para sentarse o levantarse, o retraso en su recuperación tras
+                            cirugía de rodilla,
+                            cadera o columna.
                         </div>
 
                     </div>
@@ -279,7 +310,7 @@
                         <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
                             <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
                         </button>
-                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20cáncer%20de%20próstata."
+                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20posoperatorios."
                             class="btn btn-primary fw-semibold whatsapp-btn">
                             <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
                         </a>
@@ -288,14 +319,14 @@
                 </div>
             </div>
         </div>
-         <!--======Sección de contacto para dudas======-->
+        <!--======Sección de contacto para dudas======-->
         <section class="consulta-patologia mt-5 mb-5">
             <div
                 class="container d-flex flex-column align-items-center text-center p-4 rounded-4 shadow bg-white consulta-box">
                 <h5 class="fw-bold mb-4" id="doubts_text">
                     ¿No encontraste tu patología? Escríbenos y con gusto aclaramos tus dudas
                 </h5>
-                <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20más%20información%20sobre%20fisioterapia%20geriátrica."
+                <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20más%20información%20sobre%20fisioterapia%20deportiva"
                     class="btn whatsapp-consulta-btn d-inline-flex align-items-center justify-content-center px-4 py-2 fw-semibold">
                     <i class="fa-brands fa-whatsapp me-2 fs-5"></i> Contactar por WhatsApp
                 </a>
