@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fisioterapia Geriátrica | Zarvela</title>
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/geriatrica.css">
+    <link rel="stylesheet" href="../css/navbar-footer.css">
+    <link rel="icon" href="../img/black_icon.svg" type="image/png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top" id="navbar">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../img/logo.jpeg" alt="Zarvela" class="logo-nav me-2" />
+                <span class="fw-bold text-primary"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="/">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#fisioterapeuta">Conóceme</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactLocation">Ubicación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./preguntas.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="detalle">
+        <div style="text-align: left;">
+            <button class="btn-volver" onclick="window.location.href='../index.html'"> <span>Volver</span></button>
+        </div>
+
+
+        <h1>Fisioterapia Oncológica</h1>
+        <p class="detalle-descripcion">
+            Tratamientos especializados para pacientes con cáncer, enfocados en mejorar la calidad de vida,
+            aliviar síntomas y apoyar la recuperación durante y después del tratamiento oncológico.
+        </p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4 justify-content-center reveal">
+            <div class="col-sm-10 col-md-6 col-lg-2">
+                <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
+                    data-bs-target="#modalCancerMama">
+                    <img src="../img/caidas.png" class="card-img-top" alt="Prevención de Caídas | Síndrome de caídas">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold text-dark">Cáncer de mama</h5>
+                        <p class="text-muted small mb-0">
+                            Rehabilitación postquirúrgica, manejo de linfedema y recuperación funcional del hombro.
+                        </p>
+                        <button class="btn btn_cards"> Saber más </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD: Cáncer tiroideo -->
+            <div class="col-sm-10 col-md-6 col-lg-2">
+                <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
+                    data-bs-target="#modalCancerTiroideo">
+                    <img src="../img/oncologica/cancerTiroideo.png" class="card-img-top" alt="Cáncer tiroideo">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold text-dark">Cáncer tiroideo</h5>
+                        <p class="text-muted small mb-0">
+                            Terapia especializada tras tiroidectomía: movilidad cervical, manejo de cicatriz y voz.
+                        </p>
+                        <button class="btn btn_cards">Saber más</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD: Cáncer de próstata -->
+            <div class="col-sm-10 col-md-6 col-lg-2">
+                <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
+                    data-bs-target="#modalCancerProstata">
+                    <img src="../img/oncologica/cancerProstata.png" class="card-img-top" alt="Cáncer de próstata">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold text-dark">Cáncer de próstata</h5>
+                        <p class="text-muted small mb-0">
+                            Rehabilitación postquirúrgica, suelo pélvico masculino y recuperación funcional.
+                        </p>
+                        <button class="btn btn_cards">Saber más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== MODAL: CÁNCER DE MAMA ===== -->
+        <div class="modal fade" id="modalCancerMama" tabindex="-1" aria-labelledby="modalCancerMamaLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+                <div class="modal-content rounded-4 border-0">
+
+                    <!-- HEADER -->
+                    <div class="modal-header border-0"
+                        style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
+                        <h5 class="modal-title fw-bold" id="modalCancerMamaLabel">Cáncer de mama</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Cerrar"></button>
+                    </div>
+
+                    <!-- BODY -->
+                    <div class="modal-body px-4 py-3 text-start">
+
+                        <p class="mb-3">
+                            El <strong>cáncer de mama</strong> y sus tratamientos (cirugía, quimioterapia o
+                            radioterapia)
+                            pueden generar dolor, limitación de movimiento, linfedema y dificultades para retomar
+                            actividades
+                            cotidianas. En Zarvela acompañamos la recuperación desde un enfoque funcional, progresivo y
+                            respetuoso del proceso emocional.
+                        </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
+                        <p>
+                            Nuestro objetivo es <strong>recuperar la movilidad del hombro</strong>, disminuir dolor,
+                            mejorar la
+                            postura, prevenir o tratar el <strong>linfedema</strong> y restaurar la funcionalidad
+                            necesaria para
+                            las actividades de la vida diaria.
+                        </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
+                        <ul>
+                            <li>Evaluación funcional del hombro, cicatrices y postura.</li>
+                            <li>Manejo y drenaje del linfedema.</li>
+                            <li>Terapia para reducir adherencias y fibrosis.</li>
+                            <li>Ejercicios para mejorar fuerza, movilidad y rango de movimiento.</li>
+                            <li>Entrenamiento respiratorio y reeducación postural.</li>
+                            <li>Educación para autocuidado y prevención de complicaciones.</li>
+                        </ul>
+
+                        <div class="alert alert-light border-start border-4 border-primary mt-4">
+                            <strong>Indicaciones:</strong> Recomendado para pacientes que presentan dolor, rigidez de
+                            hombro,
+                            inflamación, linfedema, limitación funcional o molestias posteriores a cirugía de mama.
+                        </div>
+                    </div>
+
+                    <!-- FOOTER -->
+                    <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
+                        <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
+                            <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
+                        </button>
+                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20cáncer%20de%20mama."
+                            class="btn btn-primary fw-semibold whatsapp-btn">
+                            <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== MODAL: CÁNCER TIROIDEO ===== -->
+        <div class="modal fade" id="modalCancerTiroideo" tabindex="-1" aria-labelledby="modalCancerTiroideoLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+                <div class="modal-content rounded-4 border-0">
+
+                    <!-- HEADER -->
+                    <div class="modal-header border-0"
+                        style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
+                        <h5 class="modal-title fw-bold" id="modalCancerTiroideoLabel">Cáncer tiroideo</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Cerrar"></button>
+                    </div>
+
+                    <!-- BODY -->
+                    <div class="modal-body px-4 py-3 text-start">
+
+                        <p class="mb-3">
+                            Tras una <strong>tiroidectomía total o parcial</strong>, es común presentar rigidez
+                            cervical,
+                            dolor, cambios en la postura, tensión muscular y molestias en la cicatriz. En algunos casos
+                            pueden
+                            presentarse alteraciones respiratorias o de voz debido a la cercanía de estructuras
+                            nerviosas.
+                        </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
+                        <p>
+                            Ayudamos al paciente a <strong>recuperar la movilidad del cuello</strong>, mejorar la
+                            cicatriz,
+                            disminuir la tensión muscular y optimizar la respiración y la función vocal cuando es
+                            necesario.
+                        </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
+                        <ul>
+                            <li>Movilización suave y progresiva del cuello.</li>
+                            <li>Tratamiento de cicatriz para evitar adherencias y molestias.</li>
+                            <li>Ejercicios respiratorios y de voz.</li>
+                            <li>Reeducación postural para disminuir compensaciones.</li>
+                            <li>Técnicas para reducir tensión muscular cervical.</li>
+                        </ul>
+
+                        <div class="alert alert-light border-start border-4 border-primary mt-4">
+                            <strong>Indicaciones:</strong> Ideal para pacientes con rigidez cervical, dolor
+                            postquirúrgico,
+                            molestias en la cicatriz, cambios posturales o dificultad respiratoria leve tras
+                            tiroidectomía.
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
+                        <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
+                            <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
+                        </button>
+                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20cáncer%20tiroideo."
+                            class="btn btn-primary fw-semibold whatsapp-btn">
+                            <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== MODAL: CÁNCER DE PRÓSTATA ===== -->
+        <div class="modal fade" id="modalCancerProstata" tabindex="-1" aria-labelledby="modalCancerProstataLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+                <div class="modal-content rounded-4 border-0">
+
+                    <div class="modal-header border-0"
+                        style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
+                        <h5 class="modal-title fw-bold" id="modalCancerProstataLabel">Cáncer de próstata</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body px-4 py-3 text-start">
+
+                        <p class="mb-3">
+                            Después de una prostatectomía, radioterapia u otros tratamientos, muchos hombres
+                            experimentan
+                            <strong>incontinencia urinaria, dolor pélvico, debilidad del suelo pélvico y limitaciones
+                                funcionales</strong>. La fisioterapia masculina especializada puede acelerar y optimizar
+                            la
+                            recuperación.
+                        </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
+                        <p>
+                            Nuestro objetivo es restaurar el <strong>control urinario</strong>, mejorar la fuerza del
+                            <strong>suelo pélvico masculino</strong>, disminuir dolor y recuperar la funcionalidad
+                            corporal.
+                        </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
+                        <ul>
+                            <li>Fortalecimiento del suelo pélvico masculino (Kegel adaptado).</li>
+                            <li>Técnicas para mejorar control urinario e incontinencia.</li>
+                            <li>Manejo del dolor pélvico y lumbar.</li>
+                            <li>Movilización suave postquirúrgica.</li>
+                            <li>Ejercicios de respiración diafragmática y postura.</li>
+                        </ul>
+
+                        <div class="alert alert-light border-start border-4 border-primary mt-4">
+                            <strong>Indicaciones:</strong> Recomendado para pacientes con incontinencia, dolor pélvico,
+                            debilidad muscular o limitaciones posteriores a tratamiento por cáncer de próstata.
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
+                        <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
+                            <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
+                        </button>
+                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20cáncer%20de%20próstata."
+                            class="btn btn-primary fw-semibold whatsapp-btn">
+                            <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+         <!--======Sección de contacto para dudas======-->
+        <section class="consulta-patologia mt-5 mb-5">
+            <div
+                class="container d-flex flex-column align-items-center text-center p-4 rounded-4 shadow bg-white consulta-box">
+                <h5 class="fw-bold mb-4" id="doubts_text">
+                    ¿No encontraste tu patología? Escríbenos y con gusto aclaramos tus dudas
+                </h5>
+                <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20más%20información%20sobre%20fisioterapia%20geriátrica."
+                    class="btn whatsapp-consulta-btn d-inline-flex align-items-center justify-content-center px-4 py-2 fw-semibold">
+                    <i class="fa-brands fa-whatsapp me-2 fs-5"></i> Contactar por WhatsApp
+                </a>
+            </div>
+        </section>
+    </section>
+
+
+
+    <!-- Ubicación -->
+    <section class="contact-section py-5 mb-0 pb-0" id="contactLocation">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h5 class="footer-title mb-4">Ubicación</h5>
+                    <div class="d-flex align-items-start mb-2">
+                        <i class="fa-solid fa-location-dot text-primary me-2 mt-1"></i>
+                        <div>Av. Insurgentes Sur 540-A-interior 501, código 2, Roma Sur, Cuauhtémoc, 06760 Ciudad de
+                            México, CDMX
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-4">
+                        <i class="fa-solid fa-clock text-primary me-2 mt-1"></i>
+                        <div>
+                            Pregunta por disponibilidad<br />
+                            Lunes a Viernes: 13:00 - 21:00<br />
+                            Sábados: 09:00 - 17:00
+                        </div>
+                    </div>
+                    <div class="map-wrapper rounded-4 overflow-hidden shadow">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.2547175879395!2d-99.16976969999999!3d19.4013974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff6c9aa3ffff%3A0x5eccf19640399db!2sAv.%20Insurgentes%20Sur%20540-A-interior%20501%2C%20c%C3%B3digo%202%2C%20Roma%20Sur%2C%20Cuauht%C3%A9moc%2C%2006760%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1761955282988!5m2!1ses-419!2smx"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="col-md-6">
+                    <h5 class="footer-title mb-4">Contáctanos</h5>
+                    <form id="whatsappForm">
+                        <div class="mb-3">
+                            <label class="form-label">Nombre</label>
+                            <input class="form-control form-control-dark" id="name" placeholder="Tu nombre completo" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Mensaje</label>
+                            <textarea class="form-control form-control-dark" id="message"
+                                placeholder="¿En qué podemos ayudarte?" rows="3"></textarea>
+                        </div>
+                        <button type="submit" id="btnWhatsapp" class="btn w-100 whatsapp-btn mb-3" disabled>
+                            <i class="fa-brands fa-whatsapp me-2"></i> Enviar por WhatsApp
+                        </button>
+                    </form>
+
+                    <p class="mt-4 mb-2 fw-semibold social-title">Síguenos en redes sociales:</p>
+                    <div class="d-flex social-container">
+                        <a href="https://www.instagram.com/zarvela.ft?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"
+                            class="social-btn me-2"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61574130195615" target="_blank"
+                            class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer py-4" id="footer">
+        <div class="container text-center">
+            <h6 class="text-footer-brand fw-bold mb-3">Zarvela Fisioterapia</h6>
+            <p class="small text-footer-copy mb-0">© 2025 Zarvela Fisioterapia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <!-- Main JS -->
+    <script src="../js/main.js"></script>
+
+    <!-- Schema.org LocalBusiness (ajusta con tus datos reales) -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Zarvela Fisioterapia",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Insurgentes Sur 540-A-interior 501, código 2, Roma Sur",
+      "addressLocality": "Cuauhtémoc",
+      "postalCode": "06760",
+      "addressRegion": "CDMX",
+      "addressCountry": "MX"
+    },
+    "telephone": "+52 55 2404 9904",
+    "url": "https://tudominio.com",
+    "areaServed": "Ciudad de México",
+    "openingHours": "Mo-Fr 17:00-20:00, Sa 14:00-17:00",
+    "image": "https://tudominio.com/img/og-image.jpg"
+  }
+  </script>
+</body>
+
+</html>
