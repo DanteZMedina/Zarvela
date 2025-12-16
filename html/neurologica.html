@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neurológica | Zarvela</title>
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/geriatrica.css">
+    <link rel="stylesheet" href="../css/navbar-footer.css">
+    <link rel="icon" href="../img/black_icon.svg" type="image/png" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top" id="navbar">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../img/logo.jpeg" alt="Zarvela" class="logo-nav me-2" />
+                <span class="fw-bold text-primary"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="../index.html#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#fisioterapeuta">Conóceme</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactLocation">Ubicación</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./preguntas.html">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="detalle">
+        <div style="text-align: left;">
+            <button class="btn-volver" onclick="window.location.href='../index.html'"> <span>Volver</span></button>
+        </div>
+
+
+        <h1>Fisioterapia Neurológica</h1>
+        <p class="detalle-descripcion">
+            Tratamientos especializados para personas con enfermedades neurológicas, enfocados en mejorar el control del
+            movimiento, el equilibrio, la coordinación y la calidad de vida mediante programas de rehabilitación
+            personalizados.
+        </p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4 justify-content-center reveal">
+            <!-- Card: Infarto -->
+            <div class="col-sm-10 col-md-6 col-lg-2">
+                <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
+                    data-bs-target="#modalInfarto">
+
+                    <img src="../img/neuro/infarto.png" class="card-img-top" alt="infarto">
+
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold text-dark">Infarto Cerebeloso</h5>
+                        <p class="text-muted small mb-0">
+                            Rehabilitación neurológica para mejorar equilibrio, coordinación y control del movimiento
+                            tras daño cerebeloso.
+                        </p>
+                        <button class="btn btn_cards">Saber más</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD: Esclerosis -->
+            <div class="col-sm-10 col-md-6 col-lg-2">
+                <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
+                    data-bs-target="#modalEsclerosis">
+
+                    <img src="../img/neuro/esclerosis.png" class="card-img-top" alt="Esclerosis">
+
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold text-dark">Esclerosis múltiple</h5>
+                        <p class="text-muted small mb-0">
+                            Fisioterapia especializada para reducir la fatiga, mejorar la movilidad, crear nuevas
+                            conexiones neuronales y conservar la funcionalidad.
+                        </p>
+                        <button class="btn btn_cards">Saber más</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD: EVC -->
+            <div class="col-sm-10 col-md-6 col-lg-2">
+                <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
+                    data-bs-target="#modalEVC">
+
+                    <img src="../img/neuro/evc.png" class="card-img-top" alt="EVC">
+
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold text-dark">EVC</h5>
+                        <p class="text-muted small mb-0">
+                            Rehabilitación para recuperar movilidad, fuerza, equilibrio y autonomía tras un evento
+                            cerebral.
+                        </p>
+                        <button class="btn btn_cards">Saber más</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: Parkinson -->
+            <div class="col-sm-10 col-md-6 col-lg-2">
+                <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
+                    data-bs-target="#modalParkinson">
+
+                    <img src="../img/neuro/parkinson.png" class="card-img-top" alt="Parkinson">
+
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold text-dark">Parkinson</h5>
+                        <p class="text-muted small mb-0">
+                            Trastorno neurológico progresivo que afecta la marcha, la postura y la fluidez del
+                            movimiento.
+                        </p>
+                        <button class="btn btn_cards">Saber más</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: Ataxia -->
+            <div class="col-sm-10 col-md-6 col-lg-2">
+                <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
+                    data-bs-target="#modalAtaxia">
+
+                    <img src="../img/neuro/ataxia.png" class="card-img-top" alt="Ataxia">
+
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold text-dark">Ataxia</h5>
+                        <p class="text-muted small mb-0">
+                            Reeducación neurológica para mejorar coordinación, control postural y estabilidad.
+                        </p>
+                        <button class="btn btn_cards">Saber más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== MODAL: Infarto cerebeloso ===== -->
+        <div class="modal fade" id="modalInfarto" tabindex="-1" aria-labelledby="modalInfartoLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+                <div class="modal-content rounded-4 border-0">
+
+                    <!-- HEADER -->
+                    <div class="modal-header border-0"
+                        style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
+                        <h5 class="modal-title fw-bold" id="modalInfartoCerebelosoLabel">Infarto cerebeloso</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Cerrar"></button>
+                    </div>
+
+                    <!-- BODY -->
+                    <div class="modal-body px-4 py-3 text-start">
+
+                        <p class="mb-3">
+                            El <strong>infarto cerebeloso</strong> es un tipo de evento vascular cerebral que afecta al
+                            cerebelo,
+                            estructura encargada del equilibrio, la coordinación y el control del movimiento. Puede
+                            provocar
+                            mareo intenso, inestabilidad, dificultad para caminar y descoordinación.
+                        </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
+                        <p>
+                            Nuestro objetivo es <strong>mejorar el equilibrio, la coordinación y la seguridad en la
+                                marcha</strong>,
+                            ayudando al paciente a recuperar confianza y funcionalidad en sus actividades diarias.
+                        </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
+                        <ul>
+                            <li>Evaluación neurológica funcional y del equilibrio.</li>
+                            <li>Ejercicios de coordinación y control postural.</li>
+                            <li>Entrenamiento progresivo de la marcha.</li>
+                            <li>Reeducación del equilibrio estático y dinámico.</li>
+                            <li>Prevención de caídas y educación al paciente.</li>
+                        </ul>
+
+                        <div class="alert alert-light border-start border-4 border-primary mt-4">
+                            <strong>Ideal para:</strong> personas que presentan inestabilidad, mareo, dificultad para
+                            caminar
+                            o descoordinación tras un evento vascular cerebral.
+                        </div>
+                    </div>
+
+                    <!-- FOOTER -->
+                    <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
+                        <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
+                            <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
+                        </button>
+                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20infarto%20cerebeloso."
+                            class="btn btn-primary fw-semibold whatsapp-btn">
+                            <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ===== MODAL: Esclerosis múltiple ===== -->
+        <div class="modal fade" id="modalEsclerosis" tabindex="-1" aria-labelledby="modalEsclerosisLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+                <div class="modal-content rounded-4 border-0">
+
+                    <div class="modal-header border-0"
+                        style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
+                        <h5 class="modal-title fw-bold" id="modalEsclerosisLabel">Esclerosis múltiple</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body px-4 py-3 text-start">
+                        <p class="mb-3">
+                            La <strong>esclerosis múltiple</strong> es una enfermedad neurológica crónica debido a la desmielización que puede
+                            causar
+                            debilidad, fatiga, dolor articular, alteraciones del equilibrio, entumecimiento/hormigueo de
+                            extremidades,
+                            pérdida de visión, dificultad para concentrarse y pensar con claridad, sensaciones
+                            corporales extremas (mucho frio o mucho calor), cambios repentinos de humor y dificultad
+                            para moverse.
+                        </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
+                        <p>
+                            Buscamos <strong>conservar la movilidad, disminuir la fatiga, mejorar las conexiones
+                                neuronales, disminuir la inflamación interna de las diferentes áreas del cuerpo que se
+                                puedan estar viendo comprometidas y mantener la
+                                funcionalidad</strong>,
+                            adaptando el tratamiento a cada etapa de la enfermedad.
+                        </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
+                        <ul>
+                            <li>Ejercicio terapéutico adaptado.</li>
+                            <li>Entrenamiento de equilibrio y coordinación.</li>
+                            <li>Mejora de la resistencia y control de la fatiga.</li>
+                            <li>Masajes con técnicas específicas para el sistema nervioso (si es requerido)</li>
+                            <li>Electroterapia adaptada a cada caso.</li>
+                            <li>Aplicación de ultrasonido en áreas afectadas.</li>
+                            <li>Aplicación de calor o frio según sea necesario.</li>
+                            <li>Educación en conservación de energía.</li>
+                        </ul>
+
+                        <div class="alert alert-light border-start border-4 border-primary mt-4">
+                            <strong>Ideal para:</strong> personas con diagnóstico de Esclerosis Múltiple,
+                            Remitente-recurrente, Múltiple progresiva recurrente, Secundaria progresiva, Primaria
+                            progresiva y Síndrome clínico aislado
+                            que desean
+                            mantener
+                            su movilidad y calidad de vida.
+                        </div>
+                    </div>
+
+                    <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
+                        <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
+                            <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
+                        </button>
+                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20esclerosis%20múltiple."
+                            class="btn btn-primary fw-semibold whatsapp-btn">
+                            <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ===== MODAL: Secuelas de EVC ===== -->
+        <div class="modal fade" id="modalEVC" tabindex="-1" aria-labelledby="modalEVCLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+                <div class="modal-content rounded-4 border-0">
+
+                    <div class="modal-header border-0"
+                        style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
+                        <h5 class="modal-title fw-bold" id="modalEVCLabel">Secuelas de evento vascular cerebral</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body px-4 py-3 text-start">
+                        <p class="mb-3">
+                            Tras un <strong>evento vascular cerebral (EVC)</strong> pueden persistir alteraciones en la
+                            fuerza,
+                            el equilibrio, la coordinación y el control del movimiento.
+                        </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
+                        <p>
+                            Ayudar al paciente a <strong>recuperar la mayor independencia funcional posible</strong>
+                            mediante un proceso de rehabilitación neurológica individualizado.
+                        </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
+                        <ul>
+                            <li>Entrenamiento motor y neuromuscular.</li>
+                            <li>Reeducación de la marcha.</li>
+                            <li>Ejercicios para mejorar fuerza y coordinación.</li>
+                            <li>Trabajo de equilibrio y control postural.</li>
+                        </ul>
+
+                        <div class="alert alert-light border-start border-4 border-primary mt-4">
+                            <strong>Ideal para:</strong> personas que presentan debilidad, rigidez o dificultad para
+                            moverse
+                            después de un evento cerebral.
+                        </div>
+                    </div>
+
+                    <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
+                        <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
+                            <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
+                        </button>
+                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20secuelas%20de%20EVC."
+                            class="btn btn-primary fw-semibold whatsapp-btn">
+                            <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ===== MODAL: Parkinson ===== -->
+        <div class="modal fade" id="modalParkinson" tabindex="-1" aria-labelledby="modalParkinsonLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+                <div class="modal-content rounded-4 border-0">
+
+                    <div class="modal-header border-0"
+                        style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
+                        <h5 class="modal-title fw-bold" id="modalParkinsonLabel">Enfermedad de Parkinson</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body px-4 py-3 text-start">
+                        <p class="mb-3">
+                            La <strong>enfermedad de Parkinson</strong> es un trastorno neurológico progresivo que
+                            afecta la
+                            movilidad, provocando rigidez, lentitud y alteraciones en la marcha.
+                        </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
+                        <p>
+                            Mantener la movilidad, <strong>mejorar la postura y reducir el riesgo de caídas</strong>,
+                            favoreciendo una vida activa y funcional.
+                        </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
+                        <ul>
+                            <li>Ejercicios para mejorar la amplitud de movimiento.</li>
+                            <li>Entrenamiento de la marcha y el equilibrio.</li>
+                            <li>Trabajo de coordinación y control postural.</li>
+                            <li>Educación para la prevención de caídas.</li>
+                        </ul>
+
+                        <div class="alert alert-light border-start border-4 border-primary mt-4">
+                            <strong>Ideal para:</strong> personas con Parkinson que buscan conservar su movilidad y
+                            autonomía.
+                        </div>
+                    </div>
+
+                    <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
+                        <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
+                            <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
+                        </button>
+                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20Parkinson."
+                            class="btn btn-primary fw-semibold whatsapp-btn">
+                            <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== MODAL: Ataxia ===== -->
+        <div class="modal fade" id="modalAtaxia" tabindex="-1" aria-labelledby="modalAtaxiaLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+                <div class="modal-content rounded-4 border-0">
+
+                    <div class="modal-header border-0"
+                        style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
+                        <h5 class="modal-title fw-bold" id="modalAtaxiaLabel">Ataxia</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body px-4 py-3 text-start">
+                        <p class="mb-3">
+                            La <strong>ataxia</strong> es una alteración neurológica que afecta la coordinación y el
+                            equilibrio,
+                            dificultando movimientos precisos y la marcha.
+                        </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
+                        <p>
+                            Mejorar la estabilidad, la coordinación y la <strong>seguridad al moverse</strong>,
+                            favoreciendo la independencia del paciente.
+                        </p>
+
+                        <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
+                        <ul>
+                            <li>Ejercicios de coordinación y control motor.</li>
+                            <li>Entrenamiento del equilibrio.</li>
+                            <li>Reeducación de la marcha.</li>
+                            <li>Prevención de caídas.</li>
+                        </ul>
+
+                        <div class="alert alert-light border-start border-4 border-primary mt-4">
+                            <strong>Ideal para:</strong> personas con dificultad para coordinar movimientos o mantener
+                            el equilibrio.
+                        </div>
+                    </div>
+
+                    <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
+                        <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
+                            <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
+                        </button>
+                        <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoración%20por%20ataxia."
+                            class="btn btn-primary fw-semibold whatsapp-btn">
+                            <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--======Sección de contacto para dudas======-->
+        <section class="consulta-patologia mt-5 mb-5">
+            <div
+                class="container d-flex flex-column align-items-center text-center p-4 rounded-4 shadow bg-white consulta-box">
+                <h5 class="fw-bold mb-4" id="doubts_text">
+                    ¿No encontraste tu patología? Escríbenos y con gusto aclaramos tus dudas
+                </h5>
+                <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20más%20información%20sobre%20fisioterapia%20neurologica." target="_blank"
+                    class="btn whatsapp-consulta-btn d-inline-flex align-items-center justify-content-center px-4 py-2 fw-semibold">
+                    <i class="fa-brands fa-whatsapp me-2 fs-5"></i> Contactar por WhatsApp
+                </a>
+            </div>
+        </section>
+    </section>
+
+    <!-- Ubicación -->
+    <section class="contact-section py-5 mb-0 pb-0" id="contactLocation">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h5 class="footer-title mb-4">Ubicación</h5>
+                    <div class="d-flex align-items-start mb-2">
+                        <i class="fa-solid fa-location-dot text-primary me-2 mt-1"></i>
+                        <div>Av. Insurgentes Sur 540-A-interior 501, código 2, Roma Sur, Cuauhtémoc, 06760 Ciudad de
+                            México, CDMX
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-4">
+                        <i class="fa-solid fa-clock text-primary me-2 mt-1"></i>
+                        <div>
+                            Pregunta por disponibilidad<br />
+                            Lunes a Viernes: 13:00 - 21:00<br />
+                            Sábados: 09:00 - 17:00
+                        </div>
+                    </div>
+                    <div class="map-wrapper rounded-4 overflow-hidden shadow">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.2547175879395!2d-99.16976969999999!3d19.4013974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff6c9aa3ffff%3A0x5eccf19640399db!2sAv.%20Insurgentes%20Sur%20540-A-interior%20501%2C%20c%C3%B3digo%202%2C%20Roma%20Sur%2C%20Cuauht%C3%A9moc%2C%2006760%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1761955282988!5m2!1ses-419!2smx"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="col-md-6">
+                    <h5 class="footer-title mb-4">Contáctanos</h5>
+                    <form id="whatsappForm">
+                        <div class="mb-3">
+                            <label class="form-label">Nombre</label>
+                            <input class="form-control form-control-dark" id="name" placeholder="Tu nombre completo" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Mensaje</label>
+                            <textarea class="form-control form-control-dark" id="message"
+                                placeholder="¿En qué podemos ayudarte?" rows="3"></textarea>
+                        </div>
+                        <button type="submit" id="btnWhatsapp" class="btn w-100 whatsapp-btn mb-3" disabled>
+                            <i class="fa-brands fa-whatsapp me-2"></i> Enviar por WhatsApp
+                        </button>
+                    </form>
+
+                    <p class="mt-4 mb-2 fw-semibold social-title">Síguenos en redes sociales:</p>
+                    <div class="d-flex social-container">
+                        <a href="https://www.instagram.com/zarvela.ft?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"
+                            class="social-btn me-2"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61574130195615" target="_blank"
+                            class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer py-4" id="footer">
+        <div class="container text-center">
+            <h6 class="text-footer-brand fw-bold mb-3">Zarvela Fisioterapia</h6>
+            <p class="small text-footer-copy mb-0">© 2025 Zarvela Fisioterapia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <!-- Main JS -->
+    <script src="../js/main.js"></script>
+
+    <!-- Schema.org LocalBusiness (ajusta con tus datos reales) -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Zarvela Fisioterapia",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Insurgentes Sur 540-A-interior 501, código 2, Roma Sur",
+      "addressLocality": "Cuauhtémoc",
+      "postalCode": "06760",
+      "addressRegion": "CDMX",
+      "addressCountry": "MX"
+    },
+    "telephone": "+52 55 2404 9904",
+    "url": "https://tudominio.com",
+    "areaServed": "Ciudad de México",
+    "openingHours": "Mo-Fr 17:00-20:00, Sa 14:00-17:00",
+    "image": "https://tudominio.com/img/og-image.jpg"
+  }
+  </script>
+</body>
+
+</html>
