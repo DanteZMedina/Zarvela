@@ -22,22 +22,22 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top" id="navbar">
     <div class="container d-flex align-items-center justify-content-between">
-        <a class="navbar-brand d-flex align-items-center" href="/">
-          <img src="../img/logo.jpeg" alt="Zarvela" class="logo-nav me-2" />
-          <span class="fw-bold text-primary"></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav ms-auto fw-semibold">
-            <li class="nav-item"><a class="nav-link" href="../">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="../#fisioterapeuta">Conóceme</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contactLocation">Ubicación</a></li>
-            <li class="nav-item"><a class="nav-link" href="../">Preguntas Frecuentes</a></li>
-          </ul>
-        </div>
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="../img/logo.jpeg" alt="Zarvela" class="logo-nav me-2" />
+        <span class="fw-bold text-primary"></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto fw-semibold">
+          <li class="nav-item"><a class="nav-link" href="../">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="../#fisioterapeuta">Conóceme</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contactLocation">Ubicación</a></li>
+          <li class="nav-item"><a class="nav-link" href="../">Preguntas Frecuentes</a></li>
+        </ul>
       </div>
+    </div>
     </div>
   </nav>
 
@@ -291,25 +291,47 @@
 
   <!-- Schema.org LocalBusiness (ajusta con tus datos reales) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    "name": "Zarvela Fisioterapia",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Av. Insurgentes Sur 540-A-interior 501, código 2, Roma Sur",
-      "addressLocality": "Cuauhtémoc",
-      "postalCode": "06760",
-      "addressRegion": "CDMX",
-      "addressCountry": "MX"
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Zarvela Fisioterapia",
+  "url": "https://zarvela.org",
+  "image": "https://zarvela.org/img/branding/zarvela-og-image.jpg",
+  "telephone": "+525538799478",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Ciudad de México"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Insurgentes Sur 540-A interior 501, Roma Sur",
+    "addressLocality": "Ciudad de México",
+    "addressRegion": "CDMX",
+    "postalCode": "06760",
+    "addressCountry": "MX"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "13:00",
+      "closes": "21:00"
     },
-    "telephone": "+52 55 2404 9904",
-    "url": "https://tudominio.com",
-    "areaServed": "Ciudad de México",
-    "openingHours": "Mo-Fr 17:00-20:00, Sa 14:00-17:00",
-    "image": "https://tudominio.com/img/og-image.jpg"
-  }
-  </script>
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ]
+}
+</script>
 </body>
 
 </html>

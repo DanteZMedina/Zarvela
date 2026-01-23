@@ -15,8 +15,8 @@
   <meta property="og:description"
     content="Fisioterapia vestibular, deportiva y a domicilio en Narvarte, CDMX. Agenda por WhatsApp." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://tudominio.com" />
-  <meta property="og:image" content="https://tudominio.com/img/og-image.jpg" />
+  <meta property="og:url" content="https://zarvela.org" />
+  <meta property="og:image" content="https://zarvela.org/img/branding/zarvela-og-image.png" />
 
   <!-- Favicon -->
   <link rel="icon" href="./img/black_icon.svg" type="image/png" />
@@ -58,10 +58,12 @@
   <!-- HERO -->
   <header class="hero d-flex flex-column justify-content-center text-center" id="main-content">
     <div class="container py-5">
-      <h1 class="fw-bold display-5 text-white mb-2">Fisioterapia especializada para recuperar movilidad y calidad de vida</h1>
+      <h1 class="fw-bold display-5 text-white mb-2">Fisioterapia especializada para recuperar movilidad y calidad de
+        vida</h1>
       <p class="text-white fs-5 mb-4">
-      Atención profesional en <strong>Roma sur</strong> con opción <strong>presencial</strong>, <strong>online</strong> y <strong>a domicilio</strong>.
-    </p>
+        Atención profesional en <strong>Roma sur</strong> con opción <strong>presencial</strong>,
+        <strong>online</strong> y <strong>a domicilio</strong>.
+      </p>
 
       <!-- Grid de servicios -->
       <div class="row g-4 justify-content-center">
@@ -135,7 +137,8 @@
         <div class="col-md-7">
           <h3 class="fw-bold mb-2" id="fisioName">Marisol Cruz Velázquez</h3>
           <p class="text-muted mb-4" id="fisioBio">
-            Fisioterapeuta certificada con más de 8 años de experiencia en rehabilitación deportiva, geriatrica, vestibular,
+            Fisioterapeuta certificada con más de 8 años de experiencia en rehabilitación deportiva, geriatrica,
+            vestibular,
             oncologica y neurologica. Especialista en técnicas manuales y programas de ejercicio terapéutico.
             Comprometida con brindar atención personalizada y de calidad para cada paciente.
           </p>
@@ -254,27 +257,49 @@
   <!-- Main JS -->
   <script src="./js/main.js"></script>
 
-  <!-- Schema.org LocalBusiness (ajusta con tus datos reales) -->
+  <!-- Schema.org LocalBusiness -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    "name": "Zarvela Fisioterapia",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Av. Insurgentes Sur 540-A-interior 501, código 2, Roma Sur",
-      "addressLocality": "Cuauhtémoc",
-      "postalCode": "06760",
-      "addressRegion": "CDMX",
-      "addressCountry": "MX"
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Zarvela Fisioterapia",
+  "url": "https://zarvela.org",
+  "image": "https://zarvela.org/img/branding/zarvela-og-image.jpg",
+  "telephone": "+525538799478",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Ciudad de México"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Insurgentes Sur 540-A interior 501, Roma Sur",
+    "addressLocality": "Ciudad de México",
+    "addressRegion": "CDMX",
+    "postalCode": "06760",
+    "addressCountry": "MX"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "13:00",
+      "closes": "21:00"
     },
-    "telephone": "+52 55 3879 9478",
-    "url": "https://tudominio.com",
-    "areaServed": "Ciudad de México",
-    "openingHours": "Mo-Fr 17:00-20:00, Sa 14:00-17:00",
-    "image": "https://tudominio.com/img/og-image.jpg"
-  }
-  </script>
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ]
+}
+</script>
 </body>
 
 </html>

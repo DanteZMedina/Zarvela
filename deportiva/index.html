@@ -395,25 +395,47 @@
 
     <!-- Schema.org LocalBusiness (ajusta con tus datos reales) -->
     <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalClinic",
-    "name": "Zarvela Fisioterapia",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Av. Insurgentes Sur 540-A-interior 501, código 2, Roma Sur",
-      "addressLocality": "Cuauhtémoc",
-      "postalCode": "06760",
-      "addressRegion": "CDMX",
-      "addressCountry": "MX"
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Zarvela Fisioterapia",
+  "url": "https://zarvela.org",
+  "image": "https://zarvela.org/img/branding/zarvela-og-image.jpg",
+  "telephone": "+525538799478",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Ciudad de México"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Insurgentes Sur 540-A interior 501, Roma Sur",
+    "addressLocality": "Ciudad de México",
+    "addressRegion": "CDMX",
+    "postalCode": "06760",
+    "addressCountry": "MX"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "13:00",
+      "closes": "21:00"
     },
-    "telephone": "+52 55 2404 9904",
-    "url": "https://tudominio.com",
-    "areaServed": "Ciudad de México",
-    "openingHours": "Mo-Fr 17:00-20:00, Sa 14:00-17:00",
-    "image": "https://tudominio.com/img/og-image.jpg"
-  }
-  </script>
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ]
+}
+</script>
 </body>
 
 </html>
