@@ -111,6 +111,15 @@ a.card_btn {
   transition: all .3s ease; 
 }
 
+#fisioName { 
+  margin-left: 13px;
+}
+
+#fisioBio { 
+  padding: 13px;
+  text-align: justify;
+}
+
 .therapist-card:hover{ 
   transform: translateY(-3px); 
   box-shadow: 0 8px 22px rgba(0,0,0,.12); 

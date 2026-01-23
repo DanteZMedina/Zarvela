@@ -18,8 +18,8 @@ if (btnAgendar){
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
     if (isMobile) {
-      const whatsappNumber = "525524049904"; // <-- tu número
-      const defaultMessage = encodeURIComponent("Hola, quiero agendar una cita 👋");
+      const whatsappNumber = "525538799478"; 
+      const defaultMessage = encodeURIComponent("Hola, quiero agendar una cita ");
       window.open(`https://wa.me/${whatsappNumber}?text=${defaultMessage}`, "_blank");
       return;
     }
