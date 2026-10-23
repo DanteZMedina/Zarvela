@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zarvela.org/sitemap.xml

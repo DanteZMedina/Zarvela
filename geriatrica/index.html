@@ -1,593 +1,319 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es" class="no-js">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Geriátrica | Zarvela</title>
-    <!-- Bootstrap & Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fisioterapia geriátrica y prevención de caídas en Roma Sur | Zarvela</title>
+  <meta name="description" content="Fisioterapia para personas mayores: prevención de caídas, fragilidad, sarcopenia, dolor crónico y úlceras por presión. En consultorio o a domicilio, Roma Sur, CDMX." />
+  <link rel="canonical" href="https://zarvela.org/geriatrica/" />
+  <meta name="theme-color" content="#FAF6F1" />
 
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/geriatrica.css">
-    <link rel="stylesheet" href="../css/navbar-footer.css">
-    <link rel="icon" href="../img/black_icon.svg" type="image/png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:title" content="Fisioterapia geriátrica y prevención de caídas en Roma Sur | Zarvela" />
+  <meta property="og:description" content="Fisioterapia para personas mayores: prevención de caídas, fragilidad, sarcopenia, dolor crónico y úlceras por presión. En consultorio o a domicilio, Roma Sur, CDMX." />
+  <meta property="og:url" content="https://zarvela.org/geriatrica/" />
+  <meta property="og:image" content="https://zarvela.org/img/branding/zarvela-og-image.png" />
+
+  <link rel="icon" href="/img/black_icon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/zarvela.css" />
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top" id="navbar">
-        <div class="container d-flex align-items-center justify-content-between">
-            <a class="navbar-brand d-flex align-items-center" href="/">
-                <img src="../img/logo.jpeg" alt="Zarvela" class="logo-nav me-2" />
-                <span class="fw-bold text-primary"></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto fw-semibold">
-                    <li class="nav-item"><a class="nav-link" href="../#servicios">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../#fisioterapeuta">Conóceme</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contactLocation">Ubicación</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../preguntas/">Preguntas Frecuentes</a></li>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <!-- ======== Navegación ======== -->
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Zarvela, inicio"><strong>ZARVELA</strong><small>Consultorio de fisioterapia</small></a>
+      <nav aria-label="Principal">
+        <ul class="nav-links" id="menu">
+          <li><a href="/#areas" aria-current="page">Áreas de atención</a></li>
+          <li><a href="/#enfoque">Cómo trabajo</a></li>
+          <li><a href="/#sobre-mi">Sobre mí</a></li>
+          <li><a href="/preguntas/">Preguntas</a></li>
+          <li><a href="/#contacto">Contacto</a></li>
+          <li class="menu-cta"><a class="btn btn-primary" data-wa href="https://wa.me/525538799478">Agendar valoración</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary nav-cta" data-wa href="https://wa.me/525538799478">Agendar valoración</a>
+      <button class="menu-btn" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ======== Encabezado ======== -->
+    <section class="page-hero">
+      <div class="wrap">
+        <div>
+          <nav class="crumbs fade-in" aria-label="Ruta"><a href="/">Inicio</a><span>/</span><a href="/#areas">Áreas de atención</a><span>/</span><span aria-current="page" style="margin:0;opacity:1">Geriátrica</span></nav>
+          <h1><span class="line"><span>Fisioterapia <em>geriátrica</em></span></span></h1>
+          <p class="lead fade-in">Fuerza, marcha y equilibrio para personas mayores. Programas adaptados a cada persona, en consultorio o en casa.</p>
+          <div class="actions fade-in">
+            <a class="btn btn-primary" data-wa="Hola, me gustaría agendar una valoración de fisioterapia geriátrica." href="https://wa.me/525538799478">Agendar valoración</a>
+            <a class="btn btn-ghost" href="#condiciones">Ver condiciones <span class="arr">→</span></a>
+          </div>
+        </div>
+        <aside class="for-you rv" style="--i:2">
+          <h2>Puede ser para ti si…</h2>
+          <ul>
+            <li>Ha tenido caídas o tiene miedo a caer</li>
+            <li>Le cuesta levantarse de la silla o subir escaleras</li>
+            <li>Ha perdido fuerza o peso sin buscarlo</li>
+            <li>Pasa mucho tiempo en cama o en silla</li>
+            <li>Tiene dolor articular que limita sus actividades</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ======== Condiciones ======== -->
+    <section class="areas" id="condiciones">
+      <div class="wrap">
+        <div class="head">
+          <div><span class="eyebrow rv">Condiciones que atiendo</span>
+            <h2 class="rv" style="--i:1">Cada caso, <em>con su plan</em>.</h2>
+          </div>
+          <p class="muted rv" style="--i:2">Abre cada condición para ver en qué consiste y cómo la trabajamos.</p>
+        </div>
+        <div class="conditions">
+          <details class="rv" style="--i:0">
+            <summary><span class="idx">01</span>
+              <h3>Prevención de caídas</h3>
+              <p>Equilibrio, fuerza y marcha para moverse con más seguridad.</p><span class="plus" aria-hidden="true"></span>
+            </summary>
+            <div class="cond-body">
+              <div>
+                <h4>¿Qué es?</h4>
+                <p>Las caídas son frecuentes en personas mayores y suelen relacionarse con pérdida de fuerza, alteraciones del equilibrio o miedo a caminar. Un programa de ejercicio puede ayudar a mejorar la estabilidad y la confianza.</p>
+              </div>
+              <div>
+                <h4>Cómo lo trabajamos</h4>
+                <ul>
+                  <li>Valoración del equilibrio y la marcha.</li>
+                  <li>Entrenamiento de estabilidad y coordinación.</li>
+                  <li>Fortalecimiento de piernas.</li>
+                  <li>Reeducación de la postura y de la movilidad segura.</li>
+                  <li>Recomendaciones para el hogar.</li>
                 </ul>
+              </div>
+              <div class="fit">
+                <p><b>Indicado para:</b> Personas con caídas previas, debilidad o pérdida de confianza al caminar.</p>
+                <a class="btn btn-primary" data-wa="Hola, me gustaría agendar una valoración por prevención de caídas." href="https://wa.me/525538799478"><svg aria-hidden="true"><use href="/img/icons.svg#wa"/></svg>Agendar</a>
+              </div>
             </div>
+          </details>
+          <details class="rv" style="--i:1">
+            <summary><span class="idx">02</span>
+              <h3>Síndrome de fragilidad</h3>
+              <p>Pérdida progresiva de fuerza, energía y capacidad funcional.</p><span class="plus" aria-hidden="true"></span>
+            </summary>
+            <div class="cond-body">
+              <div>
+                <h4>¿Qué es?</h4>
+                <p>La fragilidad es un estado en el que disminuyen la fuerza, la energía, la masa muscular y la capacidad funcional, lo que aumenta el riesgo de caídas y de perder independencia.</p>
+              </div>
+              <div>
+                <h4>Cómo lo trabajamos</h4>
+                <ul>
+                  <li>Valoración funcional integral (fuerza, equilibrio y velocidad de marcha).</li>
+                  <li>Entrenamiento de fuerza progresivo y adaptado.</li>
+                  <li>Reeducación de la marcha y del equilibrio.</li>
+                  <li>Ejercicio cardiovascular suave.</li>
+                  <li>Orientación sobre hábitos y autocuidado.</li>
+                </ul>
+              </div>
+              <div class="fit">
+                <p><b>Indicado para:</b> Personas mayores con fatiga frecuente, debilidad, pérdida de peso involuntaria o dificultad para las actividades cotidianas.</p>
+                <a class="btn btn-primary" data-wa="Hola, me gustaría agendar una valoración por síndrome de fragilidad." href="https://wa.me/525538799478"><svg aria-hidden="true"><use href="/img/icons.svg#wa"/></svg>Agendar</a>
+              </div>
+            </div>
+          </details>
+          <details class="rv" style="--i:2">
+            <summary><span class="idx">03</span>
+              <h3>Sarcopenia</h3>
+              <p>Pérdida de masa y fuerza muscular por edad o inactividad.</p><span class="plus" aria-hidden="true"></span>
+            </summary>
+            <div class="cond-body">
+              <div>
+                <h4>¿Qué es?</h4>
+                <p>La sarcopenia es la pérdida progresiva de masa y fuerza muscular asociada al envejecimiento o al sedentarismo. Afecta la movilidad y el equilibrio, y aumenta el riesgo de caídas.</p>
+              </div>
+              <div>
+                <h4>Cómo lo trabajamos</h4>
+                <ul>
+                  <li>Valoración de la fuerza y la funcionalidad.</li>
+                  <li>Ejercicio de resistencia progresiva.</li>
+                  <li>Entrenamiento de equilibrio y coordinación.</li>
+                  <li>Orientación para mantener la actividad física en casa.</li>
+                </ul>
+              </div>
+              <div class="fit">
+                <p><b>Indicado para:</b> Debilidad, pérdida de masa muscular o dificultad para levantarse o hacer esfuerzos.</p>
+                <a class="btn btn-primary" data-wa="Hola, me gustaría agendar una valoración por sarcopenia." href="https://wa.me/525538799478"><svg aria-hidden="true"><use href="/img/icons.svg#wa"/></svg>Agendar</a>
+              </div>
+            </div>
+          </details>
+          <details class="rv" style="--i:3">
+            <summary><span class="idx">04</span>
+              <h3>Dolor crónico</h3>
+              <p>Dolor articular o muscular persistente en personas mayores.</p><span class="plus" aria-hidden="true"></span>
+            </summary>
+            <div class="cond-body">
+              <div>
+                <h4>¿Qué es?</h4>
+                <p>En personas mayores, el dolor persistente suele asociarse a artrosis, lesiones antiguas o problemas de columna, y puede limitar el movimiento y el ánimo.</p>
+              </div>
+              <div>
+                <h4>Cómo lo trabajamos</h4>
+                <ul>
+                  <li>Valoración funcional.</li>
+                  <li>Terapia manual suave.</li>
+                  <li>Ejercicios de movilidad y fortalecimiento.</li>
+                  <li>Agentes físicos (calor, frío o electroterapia) cuando están indicados.</li>
+                  <li>Educación en autocuidado.</li>
+                </ul>
+              </div>
+              <div class="fit">
+                <p><b>Indicado para:</b> Dolor persistente en columna, rodillas, hombros o cadera.</p>
+                <a class="btn btn-primary" data-wa="Hola, me gustaría agendar una valoración por dolor crónico." href="https://wa.me/525538799478"><svg aria-hidden="true"><use href="/img/icons.svg#wa"/></svg>Agendar</a>
+              </div>
+            </div>
+          </details>
+          <details class="rv" style="--i:0">
+            <summary><span class="idx">05</span>
+              <h3>Úlceras por presión</h3>
+              <p>Prevención y manejo complementario en personas con movilidad reducida.</p><span class="plus" aria-hidden="true"></span>
+            </summary>
+            <div class="cond-body">
+              <div>
+                <h4>¿Qué es?</h4>
+                <p>Las úlceras por presión son lesiones de la piel causadas por presión prolongada, sobre todo en personas que pasan mucho tiempo en cama o en silla de ruedas. La fisioterapia participa en la prevención y como apoyo al manejo médico y de enfermería.</p>
+              </div>
+              <div>
+                <h4>Cómo lo trabajamos</h4>
+                <ul>
+                  <li>Valoración del riesgo y de la movilidad.</li>
+                  <li>Movilizaciones pasivas y activas.</li>
+                  <li>Cambios de posición y técnicas de alivio de presión.</li>
+                  <li>Educación a la persona y a sus cuidadores.</li>
+                </ul>
+              </div>
+              <div class="fit">
+                <p><b>Indicado para:</b> Personas encamadas o con movilidad reducida, en coordinación con su médico. Atención a domicilio disponible.</p>
+                <a class="btn btn-primary" data-wa="Hola, me gustaría agendar una valoración por úlceras por presión." href="https://wa.me/525538799478"><svg aria-hidden="true"><use href="/img/icons.svg#wa"/></svg>Agendar</a>
+              </div>
+            </div>
+          </details>
         </div>
-
-    </nav>
-
-    <section class="detalle">
-        <div style="text-align: left;">
-            <button class="btn-volver" onclick="window.location.href='/'"> <span>Volver</span></button>
-        </div>
-
-
-        <h1>Fisioterapia Geriátrica</h1>
-        <p>Tratamientos especializados para adultos mayores, enfocados en mejorar la movilidad, equilibrio y calidad de
-            vida mediante técnicas de prevención, diagnóstico y tratamiento.</p>
-
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4 justify-content-center">
-            <div class="col-sm-10 col-md-6 col-lg-2 reveal">
-                <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
-                    data-bs-target="#modalCaidas">
-                    <img src="../img/caidas.png" class="card-img-top" alt="Prevención de Caídas | Síndrome de caídas">
-                    <div class="card-body text-center">
-                        <h5 class="fw-bold text-dark">Prevención de Caídas | Síndrome de caídas</h5>
-                        <p class="text-muted small mb-0">
-                            Programas específicos para mejorar el equilibrio y reducir el riesgo de caídas.
-                        </p>
-                        <button class="btn btn_cards"> Saber más </button>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- ===================== MODAL: Caidas ===================== -->
-            <div class="modal fade" id="modalCaidas" tabindex="-1" aria-labelledby="modalCaidasLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
-                    <div class="modal-content rounded-4 border-0">
-                        <div class="modal-header border-0"
-                            style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
-                            <h5 class="modal-title fw-bold" id="modalCaidasLabel">
-                                Prevención de Caídas | Síndrome de caídas
-                            </h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Cerrar"></button>
-                        </div>
-
-                        <div class="modal-body px-4 py-3 text-start">
-                            <p class="mb-3">
-                                En Zarvela diseñamos programas de fisioterapia enfocados en mejorar la
-                                <strong>estabilidad, fuerza y control postural</strong>
-                                para reducir el riesgo de caídas en adultos mayores.
-                                Cada plan se adapta a la condición física y necesidades individuales del paciente.
-                            </p>
-                            <ul class="mb-3">
-                                <li>Evaluación inicial de equilibrio y marcha</li>
-                                <li>Entrenamiento de estabilidad y coordinación</li>
-                                <li>Ejercicios de fortalecimiento de miembros inferiores</li>
-                                <li>Reeducación de la postura y movilidad segura</li>
-                                <li>Educación para la prevención de recaídas</li>
-                            </ul>
-                            <p>
-                                Este tratamiento está diseñado especialmente para pacientes con
-                                <strong>síndrome de caídas, debilidad muscular o pérdida de confianza al
-                                    caminar</strong>.
-                            </p>
-                        </div>
-
-                        <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
-                            <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
-                                <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
-                            </button>
-                            <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoraci%C3%B3n%20para%20Prevenci%C3%B3n%20de%20Ca%C3%ADdas."
-                                class="btn btn-primary fw-semibold whatsapp-btn">
-                                <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ===================== CARD: Sindrome de fragilidad ===================== -->
-            <div class="col-sm-10 col-md-6 col-lg-2 reveal">
-                <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
-                    data-bs-target="#modalFragilidad">
-                    <img src="../img/fragil.png" class="card-img-top"
-                        alt="Prevención de Caídas | Síndrome de caídas CDMX, ejercicios para personas mayores">
-                    <div class="card-body text-center">
-                        <h5 class="fw-bold text-dark">Síndrome de fragilidad</h5>
-                        <p class="text-muted small mb-0">
-                            Fortalece tu cuerpo y mejora tu autonomía con ejercicios personalizados que combaten la
-                            pérdida de fuerza y equilibrio.
-                        </p>
-                        <button class="btn btn_cards"> Saber más </button>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- ===================== MODAL FRAGILIDAD ===================== -->
-            <div class="modal fade" id="modalFragilidad" tabindex="-1" aria-labelledby="modalFragilidadLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
-                    <div class="modal-content rounded-4 border-0">
-                        <div class="modal-header border-0"
-                            style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
-                            <h5 class="modal-title fw-bold" id="modalFragilidadLabel">
-                                Síndrome de Fragilidad
-                            </h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                        </div>
-
-                        <div class="modal-body px-4 py-3 text-start">
-                            <p class="mb-3">
-                                El <strong>síndrome de fragilidad</strong> es un estado clínico que se presenta en
-                                algunos adultos mayores, caracterizado por la
-                                <strong>disminución progresiva de la fuerza, la energía, la masa muscular y la capacidad
-                                    funcional</strong>.
-                                Esta condición aumenta el riesgo de caídas, hospitalizaciones y pérdida de
-                                independencia.
-                            </p>
-
-                            <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
-                            <p>
-                                En Zarvela trabajamos para <strong>revertir o disminuir los efectos de la
-                                    fragilidad</strong>
-                                mediante programas de fisioterapia individualizados, enfocados en recuperar la fuerza,
-                                la movilidad y la confianza del paciente en sus actividades diarias.
-                            </p>
-
-                            <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
-                            <ul>
-                                <li>Evaluación funcional integral (fuerza, equilibrio y velocidad de marcha).</li>
-                                <li>Entrenamiento de fuerza progresiva con ejercicios adaptados.</li>
-                                <li>Reeducación de la marcha y equilibrio para prevenir caídas.</li>
-                                <li>Entrenamiento cardiovascular suave para mejorar la resistencia.</li>
-                                <li>Asesoramiento sobre nutrición y hábitos de autocuidado.</li>
-                            </ul>
-
-                            <p>
-                                El enfoque de Zarvela combina <strong>ejercicio terapéutico, educación y acompañamiento
-                                    personalizado</strong>,
-                                ayudando al paciente a recuperar su autonomía y mejorar su calidad de vida.
-                            </p>
-
-                            <div class="alert alert-light border-start border-4 border-primary mt-4" role="alert">
-                                <strong>Indicaciones:</strong> Ideal para personas mayores que presentan fatiga
-                                frecuente, debilidad, pérdida de peso involuntaria o dificultad para realizar
-                                actividades cotidianas.
-                            </div>
-                        </div>
-
-                        <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
-                            <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
-                                <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
-                            </button>
-                            <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoraci%C3%B3n%20por%20S%C3%ADndrome%20de%20Fragilidad."
-                                class="btn btn-primary fw-semibold whatsapp-btn">
-                                <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ===================== CARD: Ulceras por presion ===================== -->
-            <div class="col-sm-10 col-md-6 col-lg-2 reveal">
-                <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
-                    data-bs-target="#modalUlceras">
-                    <img src="../img/ulceras.png" class="card-img-top"
-                        alt="Tratamiento de úlceras por presión y escaras en adultos mayores en CDMX">
-                    <div class="card-body text-center">
-                        <h5 class="fw-bold text-dark">Ulceras por presión </h5>
-                        <p class="text-muted small mb-0">
-                            Prevención y tratamiento de lesiones por inmovilidad prolongada, mejorando la circulación y
-                            el cuidado de la piel.
-                        </p>
-                        <button class="btn btn_cards"> Saber más </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ===================== MODAL ULCERAS POR PRESION ===================== -->
-            <div class="modal fade" id="modalUlceras" tabindex="-1" aria-labelledby="modalUlcerasLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
-                    <div class="modal-content rounded-4 border-0">
-                        <div class="modal-header border-0"
-                            style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
-                            <h5 class="modal-title fw-bold" id="modalUlcerasLabel">
-                                Úlceras por Presión | Escaras
-                            </h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                        </div>
-
-                        <div class="modal-body px-4 py-3 text-start">
-                            <p class="mb-3">
-                                Las <strong>úlceras por presión</strong> (también conocidas como escaras) son lesiones
-                                cutáneas que aparecen por una presión prolongada sobre la piel,
-                                especialmente en personas con movilidad reducida o que permanecen mucho tiempo en cama o
-                                en silla de ruedas.
-                                Son más frecuentes en <strong>zonas óseas como talones, codos, cadera o sacro</strong>.
-                            </p>
-
-                            <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
-                            <p>
-                                En Zarvela Fisioterapia ayudamos a prevenir, tratar y acelerar la cicatrización de las
-                                úlceras por presión
-                                mediante un <strong>abordaje integral</strong> enfocado en mejorar la circulación,
-                                redistribuir la presión y fortalecer los tejidos.
-                            </p>
-
-                            <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
-                            <ul>
-                                <li>Evaluación del estado cutáneo y grado de la úlcera.</li>
-                                <li>Movilizaciones pasivas y activas para mejorar la oxigenación y circulación.</li>
-                                <li>Ejercicios para fortalecer la musculatura y prevenir puntos de presión.</li>
-                                <li>Uso de técnicas de alivio de presión y cambios posturales.</li>
-                                <li>Educación al paciente y cuidadores sobre higiene y prevención.</li>
-                                <li>Aplicación de terapia física complementaria (electroterapia o estimulación tisular,
-                                    si es indicada).</li>
-                            </ul>
-
-                            <p>
-                                Nuestros programas están dirigidos tanto a la <strong>prevención en pacientes con
-                                    riesgo</strong> (encamados o inmovilizados),
-                                como al <strong>manejo fisioterapéutico complementario en casos ya
-                                    establecidos</strong>, siempre en coordinación con el área médica.
-                            </p>
-
-                            <div class="alert alert-light border-start border-4 border-primary mt-4" role="alert">
-                                <strong>Indicaciones:</strong> Personas mayores o con movilidad reducida, pacientes
-                                encamados, o con lesiones cutáneas incipientes
-                                que requieran rehabilitación para mejorar la circulación y prevenir complicaciones.
-                            </div>
-                        </div>
-
-                        <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
-                            <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
-                                <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
-                            </button>
-                            <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoraci%C3%B3n%20para%20%C3%9Alceras%20por%20Presi%C3%B3n."
-                                class="btn btn-primary fw-semibold whatsapp-btn">
-                                <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ===================== CARD: Sarcopenia ===================== -->
-            <div class="col-sm-10 col-md-6 col-lg-2 reveal">
-                <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
-                    data-bs-target="#modalSarcopenia">
-                    <img src="../img/sarcopenia3.png" class="card-img-top"
-                        alt="Sarcopenia | fisioterapia para sarcopenia CDMX | tratamiento pérdida de masa muscular | rehabilitación de fuerza en adultos mayores | fisioterapia geriátrica en Narvarte"
-                        id="imgsarcopenia">
-                    <div class="card-body text-center">
-                        <h5 class="fw-bold text-dark">Sarcopenia | Pérdida de masa y fuerza muscular</h5>
-                        <p class="text-muted small mb-0">
-                            Fisioterapia especializada para recuperar fuerza, movilidad y autonomía frente a la pérdida
-                            muscular por edad o inactividad.
-                        </p>
-                        <button class="btn btn_cards"> Saber más </button>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- ===================== MODAL SARCOPENIA ===================== -->
-            <div class="modal fade" id="modalSarcopenia" tabindex="-1" aria-labelledby="modalSarcopeniaLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
-                    <div class="modal-content rounded-4 border-0">
-                        <div class="modal-header border-0"
-                            style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
-                            <h5 class="modal-title fw-bold" id="modalSarcopeniaLabel">
-                                Sarcopenia | Pérdida de masa y fuerza muscular
-                            </h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                        </div>
-
-                        <div class="modal-body px-4 py-3 text-start">
-                            <p class="mb-3">
-                                La <strong>sarcopenia</strong> es la pérdida progresiva de masa y fuerza muscular
-                                asociada al envejecimiento o al sedentarismo.
-                                Esta condición afecta la movilidad, el equilibrio y la capacidad para realizar
-                                actividades cotidianas, aumentando el riesgo de caídas y dependencia.
-                            </p>
-
-                            <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
-                            <p>
-                                En Zarvela Fisioterapia diseñamos programas personalizados de <strong>ejercicio
-                                    terapéutico y fortalecimiento muscular</strong>
-                                para recuperar la fuerza, resistencia y estabilidad corporal. Nuestro enfoque busca
-                                devolver la funcionalidad y prevenir el avance de la fragilidad.
-                            </p>
-
-                            <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
-                            <ul>
-                                <li>Evaluación de fuerza, masa muscular y funcionalidad.</li>
-                                <li>Ejercicios de resistencia progresiva adaptados a cada paciente.</li>
-                                <li>Entrenamiento de equilibrio y coordinación.</li>
-                                <li>Movilizaciones y reeducación postural.</li>
-                                <li>Orientación sobre nutrición y hábitos para estimular la síntesis muscular.</li>
-                            </ul>
-
-                            <p>
-                                El tratamiento está orientado a <strong>revertir los efectos del desuso
-                                    muscular</strong> y a promover un envejecimiento activo, seguro y funcional.
-                                Combinamos movimiento, fuerza y educación para mejorar la calidad de vida del adulto
-                                mayor.
-                            </p>
-
-                            <div class="alert alert-light border-start border-4 border-primary mt-4" role="alert">
-                                <strong>Indicaciones:</strong> Recomendado para personas mayores con debilidad, pérdida
-                                de masa muscular, dificultad para levantarse o realizar esfuerzos físicos.
-                            </div>
-                        </div>
-
-                        <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
-                            <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
-                                <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
-                            </button>
-                            <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoraci%C3%B3n%20para%20Sarcopenia."
-                                class="btn btn-primary fw-semibold whatsapp-btn">
-                                <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ===================== CARD: de Dolor Cronico ===================== -->
-            <div class="col-sm-10 col-md-6 col-lg-2 reveal">
-                <div class="card shadow-sm border-0 rounded-4 h-100 service-card" data-bs-toggle="modal"
-                    data-bs-target="#modalDolorCronico">
-                    <img src="../img/dolor3.png" class="card-img-top"
-                        alt="Manejo del dolor crónico en adultos mayores | manejo del dolor musculoesquelético | fisioterapia para dolor crónico CDMX">
-                    <div class="card-body text-center">
-                        <h5 class="fw-bold text-dark">Manejo del Dolor Crónico</h5>
-                        <p class="text-muted small mb-0">
-                            Terapias personalizadas para aliviar el dolor persistente y mejorar tu movilidad y bienestar
-                            diario.
-                        </p>
-                        <button class="btn btn_cards"> Saber más </button>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- ===================== MODAL DOLOR CRONICO ===================== -->
-            <div class="modal fade" id="modalDolorCronico" tabindex="-1" aria-labelledby="modalDolorCronicoLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
-                    <div class="modal-content rounded-4 border-0">
-                        <div class="modal-header border-0"
-                            style="background: linear-gradient(90deg, #6284FF, #FF70B8); color: #fff;">
-                            <h5 class="modal-title fw-bold" id="modalDolorCronicoLabel">
-                                Manejo del Dolor Crónico
-                            </h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                        </div>
-
-                        <div class="modal-body px-4 py-3 text-start">
-                            <p class="mb-3">
-                                El <strong>dolor crónico</strong> es una condición que persiste durante meses o años,
-                                afectando la movilidad, el estado de ánimo y la calidad de vida.
-                                En adultos mayores, suele asociarse a <strong>artritis, artrosis, lesiones antiguas,
-                                    neuropatías o trastornos musculoesqueléticos</strong>.
-                            </p>
-
-                            <h6 class="fw-bold mt-4 mb-2 text-primary">Objetivo del tratamiento en Zarvela</h6>
-                            <p>
-                                En Zarvela Fisioterapia abordamos el dolor crónico desde una perspectiva integral,
-                                buscando no solo reducir el dolor,
-                                sino también mejorar la función física, la postura y la independencia del paciente.
-                                Aplicamos técnicas de fisioterapia basadas en evidencia para restaurar el movimiento y
-                                reentrenar al cuerpo en patrones saludables.
-                            </p>
-
-                            <h6 class="fw-bold mt-4 mb-2 text-primary">Nuestro abordaje incluye:</h6>
-                            <ul>
-                                <li>Evaluación funcional y detección de la causa del dolor.</li>
-                                <li>Terapia manual y liberación miofascial para disminuir tensión muscular.</li>
-                                <li>Ejercicios terapéuticos de movilidad y fortalecimiento progresivo.</li>
-                                <li>Entrenamiento postural y reeducación del movimiento.</li>
-                                <li>Uso de agentes físicos (calor, frío, electroterapia o ultrasonido, según
-                                    indicación).</li>
-                                <li>Técnicas de relajación y educación en autocuidado.</li>
-                            </ul>
-
-                            <p>
-                                Nuestro enfoque combina <strong>tratamiento físico, educación del dolor y estrategias de
-                                    movimiento consciente</strong>
-                                para ayudar al paciente a retomar una vida activa, funcional y sin limitaciones.
-                            </p>
-
-                            <div class="alert alert-light border-start border-4 border-primary mt-4" role="alert">
-                                <strong>Indicaciones:</strong> Pacientes con dolor persistente en columna, rodillas,
-                                hombros, cadera o dolor generalizado (fibromialgia, artrosis, neuropatías).
-                            </div>
-                        </div>
-
-                        <div class="modal-footer border-0 d-flex justify-content-between align-items-center">
-                            <button type="button" class="btn btn-light fw-semibold" data-bs-dismiss="modal">
-                                <i class="fa-solid fa-arrow-left me-1"></i> Cerrar
-                            </button>
-                            <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20agendar%20una%20valoraci%C3%B3n%20para%20Manejo%20de%20Dolor%20Cr%C3%B3nico."
-                                class="btn btn-primary fw-semibold whatsapp-btn">
-                                <i class="fa-brands fa-whatsapp me-2"></i> Agendar Valoración
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-        <!-- ====== Sección de contacto para dudas ====== -->
-        <section class="consulta-patologia mt-5 mb-5 reveal">
-            <div
-                class="container d-flex flex-column align-items-center text-center p-4 rounded-4 shadow bg-white consulta-box">
-                <h5 class="fw-bold mb-4" id="doubts_text">
-                    ¿No encontraste tu patología? Escríbenos y con gusto aclaramos tus dudas
-                </h5>
-                <a href="https://wa.me/525538799478?text=Hola!%20Quisiera%20más%20información%20sobre%20fisioterapia%20geriátrica."
-                    class="btn whatsapp-consulta-btn d-inline-flex align-items-center justify-content-center px-4 py-2 fw-semibold">
-                    <i class="fa-brands fa-whatsapp me-2 fs-5"></i> Contactar por WhatsApp
-                </a>
-            </div>
-        </section>
+        <p class="muted rv" style="margin-top:28px">¿No encuentras tu caso? <a data-wa="Hola, tengo una duda sobre si puedo atenderme en el área geriátrica." href="https://wa.me/525538799478" style="color:var(--rosa-profundo)">Escríbeme</a> y lo revisamos.</p>
+      </div>
     </section>
 
-
-
-    <!-- Ubicación -->
-    <section class="contact-section py-5 mb-0 pb-0" id="contactLocation">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-md-6">
-                    <h5 class="footer-title mb-4">Ubicación</h5>
-                    <div class="d-flex align-items-start mb-2">
-                        <i class="fa-solid fa-location-dot text-primary me-2 mt-1"></i>
-                        <div>Av. Insurgentes Sur 540-A-interior 501, código 2, Roma Sur, Cuauhtémoc, 06760 Ciudad de
-                            México, CDMX
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start mb-4">
-                        <i class="fa-solid fa-clock text-primary me-2 mt-1"></i>
-                        <div>
-                            Pregunta por disponibilidad<br />
-                            Lunes a Viernes: 13:00 - 21:00<br />
-                            Sábados: 09:00 - 17:00
-                        </div>
-                    </div>
-                    <div class="map-wrapper rounded-4 overflow-hidden shadow">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.2547175879395!2d-99.16976969999999!3d19.4013974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff6c9aa3ffff%3A0x5eccf19640399db!2sAv.%20Insurgentes%20Sur%20540-A-interior%20501%2C%20c%C3%B3digo%202%2C%20Roma%20Sur%2C%20Cuauht%C3%A9moc%2C%2006760%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1761955282988!5m2!1ses-419!2smx"
-                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                <!-- Contact Form -->
-                <div class="col-md-6">
-                    <h5 class="footer-title mb-4">Contáctanos</h5>
-                    <form id="whatsappForm">
-                        <div class="mb-3">
-                            <label class="form-label">Nombre</label>
-                            <input class="form-control form-control-dark" id="name" placeholder="Tu nombre completo" />
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">Mensaje</label>
-                            <textarea class="form-control form-control-dark" id="message"
-                                placeholder="¿En qué podemos ayudarte?" rows="3"></textarea>
-                        </div>
-                        <button type="submit" id="btnWhatsapp" class="btn w-100 whatsapp-btn mb-3" disabled>
-                            <i class="fa-brands fa-whatsapp me-2"></i> Enviar por WhatsApp
-                        </button>
-                    </form>
-
-                    <p class="mt-4 mb-2 fw-semibold social-title">Síguenos en redes sociales:</p>
-                    <div class="d-flex social-container">
-                        <a href="https://www.instagram.com/zarvela.ft?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"
-                            class="social-btn me-2"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61574130195615" target="_blank"
-                            class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </div>
+    <!-- ======== Primera cita ======== -->
+    <section>
+      <div class="wrap">
+        <div class="head">
+          <div><span class="eyebrow rv">Tu primera cita</span>
+            <h2 class="rv" style="--i:1">Así empezamos.</h2>
+          </div>
+          <p class="muted rv" style="--i:2">Valoración inicial en consultorio: <strong style="color:var(--cacao)">$700 MXN, IVA incluido</strong>. Sesiones de 45 a 60 minutos.</p>
         </div>
+        <div class="steps">
+          <article class="step rv"><span class="n">01</span>
+            <h3>Escucho tu historia</h3>
+            <p class="muted">Qué sientes, desde cuándo y qué quieres volver a hacer. Trae tus estudios si los tienes.</p>
+          </article>
+          <article class="step rv" style="--i:1"><span class="n">02</span>
+            <h3>Valoramos</h3>
+            <p class="muted">Pruebas de movilidad, fuerza y equilibrio según tu caso.</p>
+          </article>
+          <article class="step rv" style="--i:2"><span class="n">03</span>
+            <h3>Acordamos un plan</h3>
+            <p class="muted">Objetivos, frecuencia de sesiones y ejercicios para casa cuando aplica.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="site-footer py-4" id="footer">
-        <div class="container text-center">
-            <h6 class="text-footer-brand fw-bold mb-3">Zarvela Fisioterapia</h6>
-            <p class="small text-footer-copy mb-0">© 2025 Zarvela Fisioterapia. Todos los derechos reservados.</p>
+    <!-- ======== CTA ======== -->
+    <section class="cta">
+      <div class="wrap">
+        <span class="eyebrow rv">Agenda tu valoración</span>
+        <h2 class="rv" style="--i:1">Empecemos por entender qué necesitas.</h2>
+        <p class="rv" style="--i:2">Escríbeme por WhatsApp y te comparto disponibilidad y qué traer a tu valoración.</p>
+        <div class="actions rv" style="--i:3">
+          <a class="btn btn-light" data-wa="Hola, me gustaría agendar una valoración de fisioterapia geriátrica." href="https://wa.me/525538799478"><svg aria-hidden="true"><use href="/img/icons.svg#wa"/></svg>Agendar por WhatsApp</a>
         </div>
-    </footer>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
-    <!-- Main JS -->
-    <script src="../js/main.js"></script>
+      </div>
+    </section>
 
-    <!-- Schema.org LocalBusiness (ajusta con tus datos reales) -->
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MedicalClinic",
-  "name": "Zarvela Fisioterapia",
-  "url": "https://zarvela.org",
-  "image": "https://zarvela.org/img/branding/zarvela-og-image.jpg",
-  "telephone": "+525538799478",
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "Ciudad de México"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Av. Insurgentes Sur 540-A interior 501, Roma Sur",
-    "addressLocality": "Ciudad de México",
-    "addressRegion": "CDMX",
-    "postalCode": "06760",
-    "addressCountry": "MX"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "13:00",
-      "closes": "21:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Saturday",
-      "opens": "09:00",
-      "closes": "17:00"
-    }
-  ]
-}
-</script>
+    <!-- ======== Otras áreas ======== -->
+    <section style="padding:clamp(56px,7vw,96px) 0">
+      <div class="wrap">
+        <span class="eyebrow rv" style="margin-bottom:18px">Otras áreas de atención</span>
+        <div class="others rv" style="--i:1">
+          <a href="/musculoesqueletica/">Musculoesquelética</a>
+          <a href="/deportiva/">Deportiva</a>
+          <a href="/vestibular/">Vestibular</a>
+          <a href="/neurologica/">Neurológica</a>
+          <a href="/oncologica/">Oncológica</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======== Pie de página ======== -->
+  <footer>
+    <div class="wrap">
+      <div class="top">
+        <div>
+          <a class="brand" href="/"><strong>ZARVELA</strong><small>Consultorio de fisioterapia</small></a>
+          <p class="about-f">Fisioterapia individual en Roma Sur, a domicilio y en línea.</p>
+        </div>
+        <div>
+          <h2>Áreas</h2>
+          <ul>
+            <li><a href="/musculoesqueletica/">Musculoesquelética</a></li>
+            <li><a href="/deportiva/">Deportiva</a></li>
+            <li><a href="/vestibular/">Vestibular</a></li>
+            <li><a href="/neurologica/">Neurológica</a></li>
+            <li><a href="/geriatrica/">Geriátrica</a></li>
+            <li><a href="/oncologica/">Oncológica</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Consultorio</h2>
+          <ul>
+            <li><a href="/certificaciones/">Formación</a></li>
+            <li><a href="/preguntas/">Preguntas frecuentes</a></li>
+            <li><a href="https://www.instagram.com/zarvela.ft" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61574130195615" target="_blank" rel="noopener">Facebook</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+            <li><a href="/terminos/">Términos y políticas de cita</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="legal">
+        <span>Responsable sanitario: Marisol Cruz Velázquez · Licenciatura en Terapia Física y Rehabilitación, Centro de Rehabilitación del DIF (Iztapalapa) · Cédula profesional 13020634</span>
+        <span>COFEPRIS · Aviso de funcionamiento 2609155036A00046 · Aviso de publicidad 2609152002A00352</span>
+        <span>Av. Insurgentes Sur 540, int. 501, Roma Sur, Cuauhtémoc, 06760, CDMX · © <span data-year>2026</span> Zarvela Fisioterapia</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="btn btn-primary sticky-cta" data-wa href="https://wa.me/525538799478"><svg aria-hidden="true"><use href="/img/icons.svg#wa"/></svg>Agendar valoración</a>
+
+  <script src="/js/zarvela.js" defer></script>
 </body>
 
 </html>
