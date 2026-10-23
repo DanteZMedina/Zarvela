@@ -1,5 +1,19 @@
 # Registro de cambios
 
+## [2.0.1] · Correcciones móviles · 23 de octubre de 2026
+
+### Corregido
+
+- **Íconos invisibles** (redes sociales y WhatsApp). El archivo `img/icons.svg` nunca llegó al repositorio, así que en producción los círculos salían vacíos y los botones mostraban un hueco que descentraba el texto. Ahora cada ícono va escrito dentro del HTML, sin depender de ningún archivo externo.
+- **Scroll horizontal en celulares.** El círculo decorativo del inicio sobresalía unos 11 px de la pantalla. Se ajustó su posición y se agregó `overflow-x: clip` a `html` y `body` como protección.
+- **Menú móvil transparente.** El efecto de desenfoque de la barra (`backdrop-filter`) dejaba el menú atrapado dentro de ella. Ahora, con el menú abierto, la barra usa un fondo sólido.
+- **Botón "Agendar valoración" del menú móvil**: ahora ocupa todo el ancho y el texto queda centrado.
+
+### Mejorado
+
+- **Sección legal del pie de página**: cada dato va en su propio renglón con etiqueta (responsable sanitario, formación, cédula, COFEPRIS). Se ve en 4 columnas en escritorio, 2 en tableta y 1 en celular.
+- **Mapa**: ahora busca la dirección "Av. Insurgentes Sur 540, Roma Sur" en lugar de unas coordenadas fijas, y se agregó el enlace "Cómo llegar" a Google Maps. Google Maps no puede ubicar el interior 501, solo el edificio.
+
 ## [2.0.0] · Rebranding · 22 de octubre de 2026
 
 Rediseño completo del sitio para posicionar a Zarvela como un consultorio de fisioterapia premium en Roma Sur, con contenido corregido y la información legal y sanitaria obligatoria.
