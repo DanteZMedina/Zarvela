@@ -1,5 +1,31 @@
 # Registro de cambios
 
+## [2.0.2] · Correcciones de QA · 23 de octubre de 2026
+
+Correcciones del reporte de QA de front-end y diseño responsivo, probado en Chrome y Firefox en 13 tamaños de pantalla, de 320 a 1920 px, incluidos celulares en horizontal.
+
+### Corregido
+
+- **A1 · Tabla del aviso de privacidad cortada en celulares de 390 px o menos.** En pantallas de hasta 600 px ahora se muestra como tarjetas apiladas, con la etiqueta de cada dato.
+- **A2 · URLs canónicas.** `zarvela.org` redirige a `www.zarvela.org`, así que la canónica, `og:url`, los datos estructurados, `sitemap.xml` y `robots.txt` ahora usan `https://www.zarvela.org`.
+- **A3 · Imagen para compartir.** Nueva `img/branding/zarvela-og.jpg` de 1200×630 y 60 KB (antes, PNG de 1536×1024 y 1.7 MB, que WhatsApp podía no mostrar). Se agregaron `og:image:width` y `og:image:height`.
+- **M1 · Textos pequeños en celular.** Más grandes: pie de página (0.9rem), etiquetas legales, nota de privacidad, dirección del pie, franja de datos, ruta de navegación, botones y etiquetas de sección.
+- **M2 · Contraste de las etiquetas legales:** de 4.06:1 a 6.38:1 (mínimo recomendado: 4.5:1).
+- **M3 · Áreas táctiles.** Los enlaces del pie, la ruta de navegación y el logo ahora miden al menos 44 px de alto.
+- **M4 · Rendimiento.**
+  - Las fuentes Cormorant Garamond y Manrope ahora están en el propio sitio (`/fonts`, woff2), con precarga, en lugar de cargarse desde Google Fonts.
+  - La foto se sirve en WebP con 3 tamaños (480, 800 y 1200 px), mediante `<picture>` y `srcset`. En celular baja de 266 KB a 41 KB.
+- **M5 · Nombre accesible del logo:** se quitó el `aria-label`, que no coincidía con el texto visible.
+- **B1 · Mensajes de WhatsApp:** respetan siglas y nombres propios (VPPB, EVC, Parkinson).
+- **B2 · Ortografía:** "desgarres" se cambió por "desgarros" (RAE).
+- **B3 · Enlaces de WhatsApp:** `rel="noopener noreferrer"`.
+- **B4 · Títulos SEO de menos de 60 caracteres** en musculoesquelética, vestibular y geriátrica. Descripción de geriátrica de menos de 160.
+- **B5 · Círculo decorativo del inicio:** ya no se recorta en anchos de 860 a 1100 px.
+- **B6 · Dirección unificada** como "interior 501" en todo el sitio.
+- **B7 · Equilibrio Dinámico:** se quitó el enlace, porque el perfil de Marisol ya no existe en ese sitio. Se conserva el nombre.
+- **Banda "Primera cita":** los círculos decorativos ahora son degradados dentro de la sección, así que nada sobresale de su contenedor.
+- **Aviso de privacidad:** ya no menciona Google Fonts, porque las fuentes son propias.
+
 ## [2.0.1] · Correcciones móviles · 23 de octubre de 2026
 
 ### Corregido

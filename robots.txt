@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zarvela.org/sitemap.xml
+Sitemap: https://www.zarvela.org/sitemap.xml

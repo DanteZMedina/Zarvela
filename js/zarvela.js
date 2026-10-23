@@ -14,7 +14,7 @@ document.querySelectorAll("[data-year]").forEach((el) => (el.textContent = new D
 document.querySelectorAll("[data-wa]").forEach((a) => {
   a.href = waLink(a.dataset.wa || "Hola, me gustaría agendar una valoración.");
   a.target = "_blank";
-  a.rel = "noopener";
+  a.rel = "noopener noreferrer";
 });
 
 /* ===== Navegación ===== */
