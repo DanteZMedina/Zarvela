@@ -1,7 +1,7 @@
 /* =========================================================
    Zarvela · Interacciones
    ========================================================= */
-const WHATSAPP = "525538799478";
+const WHATSAPP = "525621749767";
 const waLink = (text) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`;
 
 document.documentElement.classList.remove("no-js");

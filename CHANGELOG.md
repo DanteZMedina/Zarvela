@@ -4,6 +4,7 @@
 
 ### Corregido
 
+- **Número de WhatsApp**: todos los botones, el número visible en Contacto y el teléfono de los datos estructurados ahora usan **+52 56 2174 9767** (`wa.me/525621749767`), el mismo registrado ante COFEPRIS. Antes: 55 3879 9478.
 - **Íconos invisibles** (redes sociales y WhatsApp). El archivo `img/icons.svg` nunca llegó al repositorio, así que en producción los círculos salían vacíos y los botones mostraban un hueco que descentraba el texto. Ahora cada ícono va escrito dentro del HTML, sin depender de ningún archivo externo.
 - **Scroll horizontal en celulares.** El círculo decorativo del inicio sobresalía unos 11 px de la pantalla. Se ajustó su posición y se agregó `overflow-x: clip` a `html` y `body` como protección.
 - **Menú móvil transparente.** El efecto de desenfoque de la barra (`backdrop-filter`) dejaba el menú atrapado dentro de ella. Ahora, con el menú abierto, la barra usa un fondo sólido.
