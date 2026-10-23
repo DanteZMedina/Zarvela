@@ -59,11 +59,12 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 section { padding: clamp(72px, 10vw, 136px) 0; }
 
 h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.1; letter-spacing: -.01em; }
-h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); }
+h1, .display { font-size: clamp(2.6rem, 6vw, 4.6rem); }
+.display { font-family: var(--serif); font-weight: 500; line-height: 1.1; letter-spacing: -.01em; }
 h2 { font-size: clamp(2rem, 4vw, 3rem); }
 h3 { font-size: 1.6rem; }
 em { font-style: italic; color: var(--rosa-profundo); }
-.eyebrow { display: block; font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: var(--salvia); font-weight: 600; }
+.eyebrow { display: block; font-family: var(--sans); line-height: 1.5; font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: var(--salvia); font-weight: 600; }
 .muted { color: var(--cacao-suave); }
 .lead { font-size: 1.1rem; color: var(--cacao-suave); max-width: 46ch; }
 .small { font-size: .85rem; }
@@ -155,7 +156,7 @@ em { font-style: italic; color: var(--rosa-profundo); }
 /* ---------- Hero (inicio) ---------- */
 .hero { padding: 32px 0 clamp(64px, 8vw, 110px); }
 .hero .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(32px, 6vw, 90px); align-items: center; }
-.hero h1 { margin: 20px 0 28px; }
+.hero .display { margin: 20px 0 28px; }
 .hero .lead { margin-bottom: 40px; }
 .hero-art { position: relative; isolation: isolate; }
 .hero-art::before { content: ""; position: absolute; right: -28px; bottom: -28px; width: 62%; aspect-ratio: 1; border-radius: 50%; background: var(--salvia-clara); z-index: -1; animation: drift 12s ease-in-out infinite alternate; }

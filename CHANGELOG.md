@@ -49,6 +49,7 @@ Rediseño completo del sitio para posicionar a Zarvela como un consultorio de fi
 - Se eliminaron Bootstrap, Font Awesome y `node_modules`. Ahora hay un solo CSS (`css/zarvela.css`, con variables de diseño), un solo JS (`js/zarvela.js`) y un archivo de íconos SVG (`img/icons.svg`).
 - El número de WhatsApp está centralizado en `js/zarvela.js` (`WHATSAPP`). Los enlaces usan el atributo `data-wa="mensaje"`.
 - SEO: etiqueta canonical, Open Graph y meta descripción propias en cada página, schema `Physiotherapy` con el horario y la dirección correctos, `sitemap.xml` y `robots.txt`.
+- SEO: el H1 del inicio ahora es "Fisioterapia en Roma Sur, CDMX". La frase "Atención con tiempo, movimiento con calma" conserva su diseño como texto destacado (`.display`).
 - Accesibilidad: enlace para saltar al contenido, etiquetas ARIA en el menú y la guía, foco visible y textos alternativos descriptivos.
 - `.gitignore` agregado. Excluye `node_modules/` y `avisos/` (documentos oficiales con datos personales).
 
