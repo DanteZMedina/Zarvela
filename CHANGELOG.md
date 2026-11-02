@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## [2.0.3] · Horario · 2 de noviembre de 2026
+
+### Cambiado
+
+- **Horario de atención:** lunes a viernes de 7:00 a 20:00 y sábados de 7:00 a 13:00, siempre con cita. Se actualizó en la franja de datos del inicio, en Contacto, en los datos estructurados (dos bloques de horario), en Preguntas frecuentes y en Términos. Queda dentro del horario declarado en el aviso de funcionamiento ante COFEPRIS (lunes a sábado, de 7:00 a 20:00).
+
 ## [2.0.2] · Correcciones de QA · 23 de octubre de 2026
 
 Correcciones del reporte de QA de front-end y diseño responsivo, probado en Chrome y Firefox en 13 tamaños de pantalla, de 320 a 1920 px, incluidos celulares en horizontal.
