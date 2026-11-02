@@ -1,9 +1,10 @@
 # Registro de cambios
 
-## [2.0.3] · Horario · 2 de noviembre de 2026
+## [2.0.3] · Horario y precio · 2 de noviembre de 2026
 
 ### Cambiado
 
+- **Precio menos protagónico:** la valoración se muestra como **"desde $700 MXN, IVA incluido"** en la tarjeta de precio del inicio, en las 6 áreas y en Preguntas frecuentes. El "desde" cubre que a domicilio cuesta más. El precio sale de la franja de datos de arriba, donde ahora aparecen las modalidades (consultorio, a domicilio, en línea). En Términos se mantiene el precio exacto de la valoración en consultorio ($700).
 - **Horario de atención:** lunes a viernes de 7:00 a 20:00 y sábados de 7:00 a 13:00, siempre con cita. Se actualizó en la franja de datos del inicio, en Contacto, en los datos estructurados (dos bloques de horario), en Preguntas frecuentes y en Términos. Queda dentro del horario declarado en el aviso de funcionamiento ante COFEPRIS (lunes a sábado, de 7:00 a 20:00).
 
 ## [2.0.2] · Correcciones de QA · 23 de octubre de 2026
