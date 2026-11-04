@@ -2,6 +2,8 @@
 
 ## [2.0.3] · Horario y precio · 2 de noviembre de 2026
 
+Publicado en producción (`main`) el 4 de noviembre de 2026, con el visto bueno de Marisol al diseño y al contenido.
+
 ### Cambiado
 
 - **Precio menos protagónico:** la valoración se muestra como **"desde $700 MXN, IVA incluido"** en la tarjeta de precio del inicio, en las 6 áreas y en Preguntas frecuentes. El "desde" cubre que a domicilio cuesta más. El precio sale de la franja de datos de arriba, donde ahora aparecen las modalidades (consultorio, a domicilio, en línea). En Términos se mantiene el precio exacto de la valoración en consultorio ($700).
@@ -103,8 +105,6 @@ Rediseño completo del sitio para posicionar a Zarvela como un consultorio de fi
 
 ### Pendiente
 
-- Visto bueno de Marisol al diseño y a las respuestas redactadas para sus preguntas.
-- Confirmar la frase textual de "Sobre mí" y el contenido del área musculoesquelética y de la oncológica (linfedema, suelo pélvico).
 - Revisión legal del aviso de privacidad y de los términos.
 - Sesión de fotos profesionales para reemplazar la foto actual y renovar la imagen para redes (`zarvela-og-image.png`).
 - Precio del paquete de 10 sesiones.
